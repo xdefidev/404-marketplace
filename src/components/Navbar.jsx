@@ -581,7 +581,7 @@ const Navbar = ({
                       </Link>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <Link
                         href="/collection/TopCollections"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
@@ -602,7 +602,7 @@ const Navbar = ({
                           All Collections
                         </span>
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
 
@@ -627,11 +627,11 @@ const Navbar = ({
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
                         <span className="font-display text-sm text-jacarta-700 dark:text-white">
-                          Create NFT
+                          Mint NFT
                         </span>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         href="/mint/CreateAINFT"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
@@ -647,10 +647,10 @@ const Navbar = ({
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
                         <span className="font-display text-sm text-jacarta-700 dark:text-white">
-                          Create NFT Collection
+                          Mint NFT Collection
                         </span>
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
 
@@ -1345,7 +1345,7 @@ const Navbar = ({
                             <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
                           </svg>
                           <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
-                            Create NFT
+                            Mint NFT
                           </span>
                         </Link>
                         {/* <Link

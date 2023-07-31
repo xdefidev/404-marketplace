@@ -59,14 +59,14 @@ export default function Home({ all_collections, nfts, artists }) {
                     NFTs
                   </span>
                 </div>
-                <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
+                {/* <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
                   <span className="block font-display text-3xl text-[#F35BC7]">
                     {artists?.length}
                   </span>
                   <span className="block font-display text-sm text-jacarta-500 dark:text-white">
                     Artists
                   </span>
-                </div>
+                </div> */}
               </div>
               <h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-5xl xl:text-6xl">
                 create, buy, sell and collect NFT’s
@@ -82,7 +82,7 @@ export default function Home({ all_collections, nfts, artists }) {
                   href="/mint/CreateNFT"
                   className="w-45 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
                 >
-                  Create NFT
+                  Mint NFT
                 </Link>
                 <Link
                   href="/marketplace"

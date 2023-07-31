@@ -118,7 +118,7 @@ const Footer = () => {
                   href="/mint/CreateNFT"
                   className="hover:text-accent dark:hover:text-white"
                 >
-                  Create NFT
+                  Mint NFT
                 </Link>
               </li>
               <li>
