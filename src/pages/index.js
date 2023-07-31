@@ -25,7 +25,7 @@ export default function Home({ all_collections, nfts, artists }) {
   return (
     <>
       <Head>
-        <title>404 - Advanced NFT Marketplace</title>
+        <title>Marketplace of 404</title>
         <meta
           name="description"
           content="First Cross-chain And Multi-chain Advanced NFT Marketplace With AI NFT Generation"

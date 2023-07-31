@@ -18,14 +18,14 @@
 #heroBack {
   height: 100%;
   width: 100%;
-  background-image: url("/gradient.jpg");
+  /* background-image: url("/gradient.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 80px;
 }
 
 #pageBack {
-  background-image: url("/gradient.jpg");
+  /* background-image: url("/gradient.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
