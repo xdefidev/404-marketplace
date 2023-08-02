@@ -624,7 +624,7 @@ const Profile = ({
       </div>
 
       {/* <!-- Profile Section --> */}
-      <section className="relative bg-light-base pb-6 pt-28 dark:bg-jacarta-800">
+      <section className="relative bg-light-base pb-6 pt-28 dark:bg-black">
         <div className="absolute left-1/2 top-0 z-10 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center">
           <figure className="relative">
             <Image
@@ -675,7 +675,7 @@ const Profile = ({
                 <span>{slug}</span>
               </a>
             </div>
-            <h2 className=" mb-2 font-display text-4xl font-medium text-jacarta-700 dark:text-white">
+            <h2 className=" mb-2 font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               {user_data?.username}
             </h2>
 
@@ -796,7 +796,7 @@ const Profile = ({
                         {calculateFlowRate(userStreamData?.flowRate) > 0 && (
                           <div className="modal-body p-6">
                             <div className="mb-2 flex items-center justify-between">
-                              <span className="font-display text-sm font-semibold text-jacarta-700 dark:text-white">
+                              <span className="font-vt323 text-sm font-semibold text-jacarta-700 dark:text-white">
                                 On Going Membership Streams{" "}
                               </span>
                               <div className="flex items-center justify-center space-x-2 mr-6">
@@ -808,7 +808,7 @@ const Profile = ({
 
                             <div className="relative mb-2 flex items-center overflow-hidden rounded-lg border border-jacarta-100 dark:border-jacarta-600">
                               <div className="flex flex-1 items-center self-stretch border-r border-jacarta-100 bg-jacarta-50 px-2">
-                                <span className="font-display text-sm text-jacarta-700">
+                                <span className="font-vt323 text-sm text-jacarta-700">
                                   fDAIx{" "}
                                 </span>
                               </div>
@@ -854,14 +854,14 @@ const Profile = ({
                         {calculateFlowRate(userStreamData?.flowRate) <= 0 && (
                           <div className="modal-body p-6">
                             <div className="mb-2 flex items-center justify-between">
-                              <span className="font-display text-sm font-semibold text-jacarta-700 dark:text-white">
+                              <span className="font-vt323 text-sm font-semibold text-jacarta-700 dark:text-white">
                                 Price
                               </span>
                             </div>
 
                             <div className="relative mb-2 flex items-center overflow-hidden rounded-lg border border-jacarta-100 dark:border-jacarta-600">
                               <div className="flex flex-1 items-center self-stretch border-r border-jacarta-100 bg-jacarta-50 px-2">
-                                <span className="font-display text-sm text-jacarta-700">
+                                <span className="font-vt323 text-sm text-jacarta-700">
                                   fDAIx
                                 </span>
                               </div>
@@ -1005,7 +1005,7 @@ const Profile = ({
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z" />
               </svg>
-              <span className="font-display text-base font-medium">
+              <span className="font-vt323 text-base font-medium">
                 In Wallet ({walletNFTs?.length ? walletNFTs?.length : "0"})
               </span>
             </button>
@@ -1040,7 +1040,7 @@ const Profile = ({
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z" />
               </svg>
-              <span className="font-display text-base font-medium">
+              <span className="font-vt323 text-base font-medium">
                 My NFTs ({nfts?.length ? nfts?.length : "0"})
               </span>
             </button>
@@ -1077,7 +1077,7 @@ const Profile = ({
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path d="M10.9 2.1l9.899 1.415 1.414 9.9-9.192 9.192a1 1 0 0 1-1.414 0l-9.9-9.9a1 1 0 0 1 0-1.414L10.9 2.1zm.707 2.122L3.828 12l8.486 8.485 7.778-7.778-1.06-7.425-7.425-1.06zm2.12 6.364a2 2 0 1 1 2.83-2.829 2 2 0 0 1-2.83 2.829z" />
               </svg>
-              <span className="font-display text-base font-medium">
+              <span className="font-vt323 text-base font-medium">
                 My Collections (
                 {my_collections?.length ? my_collections?.length : "0"})
               </span>
@@ -1174,7 +1174,7 @@ const Profile = ({
                 </div>
                 <div className="flex justify-center">
                   {nfts?.length <= 0 && (
-                    <h2 className="text-xl font-display font-thin">
+                    <h2 className="text-xl font-vt323 font-thin">
                       No NFTs to show!
                     </h2>
                   )}
@@ -1222,7 +1222,7 @@ const Profile = ({
                 </div>
                 <div className="flex justify-center">
                   {nfts?.length <= 0 && (
-                    <h2 className="text-xl font-display font-thin">
+                    <h2 className="text-xl font-vt323 font-thin">
                       No NFTs to show!
                     </h2>
                   )}
@@ -1261,7 +1261,7 @@ const Profile = ({
                 </div>
                 <div className="flex justify-center">
                   {my_collections?.length <= 0 && (
-                    <h2 className="text-xl font-display font-thin">
+                    <h2 className="text-xl font-vt323 font-thin">
                       No Collections to show!
                     </h2>
                   )}

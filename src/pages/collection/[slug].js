@@ -187,7 +187,7 @@ const Collection = ({
           </div>
 
           {/* <!-- Collection Section --> */}
-          <section className="relative bg-light-base pb-12 pt-28 dark:bg-jacarta-800">
+          <section className="relative bg-light-base pb-12 pt-28 dark:bg-black">
             <div className="absolute left-1/2 top-0 z-10 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center">
               <div className="relative">
                 <Image
@@ -261,7 +261,7 @@ const Collection = ({
 
                       <div className="modal-body p-6">
                         <div className="mb-2 flex items-center justify-between">
-                          <span className="font-display text-sm font-semibold text-jacarta-700 dark:text-white">
+                          <span className="font-vt323 text-sm font-semibold text-jacarta-700 dark:text-white">
                             Complete all the three steps to verify your
                             collection{" "}
                           </span>
@@ -276,7 +276,7 @@ const Collection = ({
                         <div className="mt-4 flex items-center space-x-2 flex-col">
                           <label
                             htmlFor="terms"
-                            className="text-xl font-semibold font-display mt-2"
+                            className="text-xl font-semibold font-vt323 mt-2"
                           >
                             Step 1 -
                           </label>
@@ -339,7 +339,7 @@ const Collection = ({
                       <div className="modal-footer">
                         <label
                           htmlFor="terms"
-                          className="text-xl font-semibold font-display mt-2"
+                          className="text-xl font-semibold font-vt323 mt-2"
                         >
                           Step 2 -
                         </label>
@@ -416,7 +416,7 @@ const Collection = ({
                       <div className="modal-footer">
                         <label
                           htmlFor="terms"
-                          className="text-xl font-semibold font-display mt-2"
+                          className="text-xl font-semibold font-vt323 mt-2"
                         >
                           Step 3 -
                         </label>
@@ -489,7 +489,7 @@ const Collection = ({
                     <span>{slug}</span>
                   </a>
                 </div>
-                <h2 className="mb-2 mt-2 font-display text-4xl font-medium text-jacarta-700 dark:text-white">
+                <h2 className="mb-2 mt-2 font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
                   {collection.name}
                 </h2>
                 <div className="mb-4"></div>
@@ -500,7 +500,7 @@ const Collection = ({
                 </p>
 
                 {/* stats  */}
-                <div className="mb-8 inline-flex flex-wrap items-center justify-center rounded-xl border border-jacarta-100 bg-white dark:border-jacarta-600 dark:bg-jacarta-800">
+                <div className="mb-8 inline-flex flex-wrap items-center justify-center rounded-xl border border-jacarta-100 bg-white dark:border-jacarta-600 dark:bg-black">
                   <a
                     href="#"
                     className="w-1/2 rounded-l-xl border-r border-jacarta-100 py-4 hover:shadow-md dark:border-jacarta-600 sm:w-32"
@@ -610,11 +610,11 @@ const Collection = ({
                     </a>
 
                     {share && (
-                      <div className="dropdown-menu dropdown-menu-end z-10 min-w-[200px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl dark:bg-jacarta-800">
+                      <div className="dropdown-menu dropdown-menu-end z-10 min-w-[200px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl dark:bg-black">
                         <a
                           href="https://twitter.com/home"
                           target="_blank"
-                          className="flex w-full items-center rounded-xl px-5 py-2 text-left font-display text-sm transition-colors hover:bg-jacarta-50 dark:text-white dark:hover:bg-jacarta-600"
+                          className="flex w-full items-center rounded-xl px-5 py-2 text-left font-vt323 text-sm transition-colors hover:bg-jacarta-50 dark:text-white dark:hover:bg-jacarta-600"
                         >
                           <svg
                             aria-hidden="true"
@@ -635,7 +635,7 @@ const Collection = ({
                         <a
                           href="https://gmail.com"
                           target="_blank"
-                          className="flex w-full items-center rounded-xl px-5 py-2 text-left font-display text-sm transition-colors hover:bg-jacarta-50 dark:text-white dark:hover:bg-jacarta-600"
+                          className="flex w-full items-center rounded-xl px-5 py-2 text-left font-vt323 text-sm transition-colors hover:bg-jacarta-50 dark:text-white dark:hover:bg-jacarta-600"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -653,7 +653,7 @@ const Collection = ({
                         </a>
                         <a
                           href="#"
-                          className="flex w-full items-center rounded-xl px-5 py-2 text-left font-display text-sm transition-colors hover:bg-jacarta-50 dark:text-white dark:hover:bg-jacarta-600"
+                          className="flex w-full items-center rounded-xl px-5 py-2 text-left font-vt323 text-sm transition-colors hover:bg-jacarta-50 dark:text-white dark:hover:bg-jacarta-600"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -715,7 +715,7 @@ const Collection = ({
                   </div>
                   <div className="flex justify-center">
                     {nfts?.length <= 0 && (
-                      <h2 className="text-xl font-display font-thin">
+                      <h2 className="text-xl font-vt323 font-thin">
                         This collection has no NFTs !!
                       </h2>
                     )}

@@ -42,13 +42,13 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
       ) : (
         <form onSubmit={handleSubmit} className="relative py-24">
           <div className="container">
-            <h1 className="py-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-white">
+            <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               Create NFT Collection
             </h1>
             <div className="mx-auto max-w-[48.125rem]">
               {/* <!-- Logo Upload --> */}
               <div className="mb-6">
-                <label className="mb-2 block font-display text-jacarta-700 dark:text-white">
+                <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-white">
                   Logo
                   <span className="text-red">*</span>
                 </label>
@@ -102,7 +102,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
 
               {/* <!-- Cover Upload --> */}
               <div className="mb-6">
-                <label className="mb-2 block font-display text-jacarta-700 dark:text-white">
+                <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-white">
                   Cover Image
                   <span className="text-red">*</span>
                 </label>
@@ -157,7 +157,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
               <div className="mb-6">
                 <label
                   htmlFor="item-name"
-                  className="mb-2 block font-display text-jacarta-700 dark:text-white"
+                  className="mb-2 block font-vt323 text-jacarta-700 dark:text-white"
                 >
                   Collection Name<span className="text-red">*</span>
                 </label>
@@ -166,7 +166,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
                   name="name"
                   type="text"
                   id="item-name"
-                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300 text-black"
+                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300 text-black"
                   placeholder="Eg: Wild Hunters"
                   required
                 />
@@ -176,7 +176,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
               <div className="mb-6">
                 <label
                   htmlFor="item-name"
-                  className="mb-2 block font-display text-jacarta-700 dark:text-white"
+                  className="mb-2 block font-vt323 text-jacarta-700 dark:text-white"
                 >
                   Symbol<span className="text-red">*</span>
                 </label>
@@ -185,7 +185,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
                   name="symbol"
                   type="text"
                   id="item-name"
-                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300 text-black"
+                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300 text-black"
                   placeholder="Eg: WILDH"
                   required
                 />
@@ -195,7 +195,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
               <div className="mb-6">
                 <label
                   htmlFor="item-description"
-                  className="mb-2 block font-display text-jacarta-700 dark:text-white"
+                  className="mb-2 block font-vt323 text-jacarta-700 dark:text-white"
                 >
                   Description
                   <span className="text-red">*</span>
@@ -207,7 +207,7 @@ const CreateNFTCollection = ({ create_collection, signer_address }) => {
                   onChange={handleChange}
                   name="description"
                   id="item-description"
-                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300"
+                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300"
                   rows="4"
                   required
                   placeholder="Provide a detailed description of your collection."

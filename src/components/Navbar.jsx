@@ -6,7 +6,7 @@ import { BsChevronDown } from "react-icons/bs";
 import * as PushAPI from "@pushprotocol/restapi";
 
 import Image from "next/image";
-import rarxlogo from "../../public/shiblite.png";
+import rarxlogo from "../../public/404-logo.jpeg";
 import filecoinLogo from "../../public/chains/filecoin.png";
 import gnosisLogo from "../../public/chains/gnosis.png";
 import goerliLogo from "../../public/chains/goerli.png";
@@ -486,8 +486,8 @@ const Navbar = ({
           <Link href="/" className="shrink-0">
             <Image
               src={rarxlogo}
-              height={60}
-              width={60}
+              height={150}
+              width={150}
               alt="404 | NFT Marketplace"
             />
           </Link>
@@ -539,14 +539,14 @@ const Navbar = ({
             </form>
           </div>
 
-          <div className="js-mobile-menu invisible lg:visible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 dark:bg-jacarta-800 lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent">
+          <div className="js-mobile-menu invisible lg:visible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 dark:bg-black lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent">
             {/* menu links  */}
             <div className="navbar w-full">
               <ul className="flex flex-col lg:flex-row">
                 <li className="js-nav-dropdown group relative">
                   <Link
                     href="#"
-                    className="dropdown-toggle flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
+                    className="dropdown-toggle flex items-center justify-between py-3.5 font-vt323 text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
                     id="navDropdown-4"
                     aria-expanded="false"
                     role="button"
@@ -555,7 +555,7 @@ const Navbar = ({
                     Explore
                   </Link>
                   <ul
-                    className="dropdown-menu group-hover:visible lg:invisible left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:opacity-100 dark:bg-jacarta-800 lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                    className="dropdown-menu group-hover:visible lg:invisible left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:opacity-100 dark:bg-black lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
                     aria-labelledby="navDropdown-4"
                   >
                     <li>
@@ -575,7 +575,7 @@ const Navbar = ({
                             <path d="M22 12.999V20a1 1 0 0 1-1 1h-8v-8.001h9zm-11 0V21H3a1 1 0 0 1-1-1v-7.001h9zM11 3v7.999H2V4a1 1 0 0 1 1-1h8zm10 0a1 1 0 0 1 1 1v6.999h-9V3h8z" />
                           </svg>
                         </span>
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           All NFTs
                         </span>
                       </Link>
@@ -598,7 +598,7 @@ const Navbar = ({
                             <path d="M17.5 2a4.5 4.5 0 0 1 2.951 7.897c.355.967.549 2.013.549 3.103A9 9 0 1 1 3.55 9.897a4.5 4.5 0 1 1 6.791-5.744 9.05 9.05 0 0 1 3.32 0A4.494 4.494 0 0 1 17.5 2zm0 2c-.823 0-1.575.4-2.038 1.052l-.095.144-.718 1.176-1.355-.253a7.05 7.05 0 0 0-2.267-.052l-.316.052-1.356.255-.72-1.176A2.5 2.5 0 1 0 4.73 8.265l.131.123 1.041.904-.475 1.295A7 7 0 1 0 19 13c0-.716-.107-1.416-.314-2.083l-.112-.33-.475-1.295 1.04-.904A2.5 2.5 0 0 0 17.5 4zM10 13a2 2 0 1 0 4 0h2a4 4 0 1 1-8 0h2z" />
                           </svg>
                         </span>
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           All Collections
                         </span>
                       </Link>
@@ -609,7 +609,7 @@ const Navbar = ({
                 <li className="js-nav-dropdown group relative">
                   <a
                     href="#"
-                    className="dropdown-toggle flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
+                    className="dropdown-toggle flex items-center justify-between py-3.5 font-vt323 text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
                     id="navDropdown-4"
                     aria-expanded="false"
                     role="button"
@@ -618,7 +618,7 @@ const Navbar = ({
                     Create
                   </a>
                   <ul
-                    className="dropdown-menu group-hover:visible lg:invisible left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:opacity-100 dark:bg-jacarta-800 lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                    className="dropdown-menu group-hover:visible lg:invisible left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:opacity-100 dark:bg-black lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
                     aria-labelledby="navDropdown-4"
                   >
                     <li>
@@ -626,7 +626,7 @@ const Navbar = ({
                         href="/mint/CreateNFT"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           Mint NFT
                         </span>
                       </Link>
@@ -636,7 +636,7 @@ const Navbar = ({
                         href="/mint/CreateAINFT"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           Create AI NFT
                         </span>
                       </Link>
@@ -646,7 +646,7 @@ const Navbar = ({
                         href="/mint/CreateNFTCollection"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           Mint NFT Collection
                         </span>
                       </Link>
@@ -654,10 +654,10 @@ const Navbar = ({
                   </ul>
                 </li>
 
-                <li>
+                {/* <li>
                   <a
                     href="/stake/stake"
-                    className="dropdown-toggle flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
+                    className="dropdown-toggle flex items-center justify-between py-3.5 font-vt323 text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
                     id="navDropdown-4"
                     aria-expanded="false"
                     role="button"
@@ -665,12 +665,12 @@ const Navbar = ({
                   >
                     Stake
                   </a>
-                </li>
+                </li> */}
 
                 {/* <li className="js-nav-dropdown group relative">
                   <a
                     href="#"
-                    className="dropdown-toggle flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
+                    className="dropdown-toggle flex items-center justify-between py-3.5 font-vt323 text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
                     id="navDropdown-4"
                     aria-expanded="false"
                     role="button"
@@ -679,7 +679,7 @@ const Navbar = ({
                     Bridge
                   </a>
                   <ul
-                    className="dropdown-menu group-hover:visible lg:invisible left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:opacity-100 dark:bg-jacarta-800 lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                    className="dropdown-menu group-hover:visible lg:invisible left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:opacity-100 dark:bg-black lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
                     aria-labelledby="navDropdown-4"
                   >
                     <li>
@@ -687,7 +687,7 @@ const Navbar = ({
                         href="/BridgeNFT"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           Bridge NFT
                         </span>
                       </Link>
@@ -697,7 +697,7 @@ const Navbar = ({
                         href="/BridgeTokens"
                         className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
                       >
-                        <span className="font-display text-sm text-jacarta-700 dark:text-white">
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                           Bridge Tokens <sup>Coming Soon</sup>
                         </span>
                       </Link>
@@ -708,7 +708,7 @@ const Navbar = ({
                 <li className="js-nav-dropdown group relative">
                   <Link
                     href="/About"
-                    className="dropdown-toggle flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
+                    className="dropdown-toggle flex items-center justify-between py-3.5 font-vt323 text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
                     id="navDropdown-1"
                     aria-expanded="false"
                     role="button"
@@ -1264,9 +1264,9 @@ const Navbar = ({
 
                     {/* profile dropdown  */}
                     {profileDrop && (
-                      <div className="!-right-4 !top-[85%] !left-auto z-10 min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full group-dropdown-hover:opacity-100 dark:bg-jacarta-800 lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:shadow-2xl">
+                      <div className="!-right-4 !top-[85%] !left-auto z-10 min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full group-dropdown-hover:opacity-100 dark:bg-black lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:shadow-2xl">
                         <button
-                          className="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-display leading-none text-jacarta-700 dark:text-white"
+                          className="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-vt323 leading-none text-jacarta-700 dark:text-white"
                           data-tippy-content="Copy"
                         >
                           <span className="max-w-[10rem] overflow-hidden text-ellipsis">
@@ -1308,7 +1308,7 @@ const Navbar = ({
                             <path fill="none" d="M0 0h24v24H0z"></path>
                             <path d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"></path>
                           </svg>
-                          <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+                          <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                             My Profile
                           </span>
                         </Link>
@@ -1326,7 +1326,7 @@ const Navbar = ({
                             <path fill="none" d="M0 0h24v24H0z" />
                             <path d="M9.954 2.21a9.99 9.99 0 0 1 4.091-.002A3.993 3.993 0 0 0 16 5.07a3.993 3.993 0 0 0 3.457.261A9.99 9.99 0 0 1 21.5 8.876 3.993 3.993 0 0 0 20 12c0 1.264.586 2.391 1.502 3.124a10.043 10.043 0 0 1-2.046 3.543 3.993 3.993 0 0 0-3.456.261 3.993 3.993 0 0 0-1.954 2.86 9.99 9.99 0 0 1-4.091.004A3.993 3.993 0 0 0 8 18.927a3.993 3.993 0 0 0-3.457-.26A9.99 9.99 0 0 1 2.5 15.121 3.993 3.993 0 0 0 4 11.999a3.993 3.993 0 0 0-1.502-3.124 10.043 10.043 0 0 1 2.046-3.543A3.993 3.993 0 0 0 8 5.071a3.993 3.993 0 0 0 1.954-2.86zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                           </svg>
-                          <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+                          <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                             Edit Profile
                           </span>
                         </Link>
@@ -1344,7 +1344,7 @@ const Navbar = ({
                             <path fill="none" d="M0 0h24v24H0z" />
                             <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
                           </svg>
-                          <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+                          <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                             Mint NFT
                           </span>
                         </Link>
@@ -1360,7 +1360,7 @@ const Navbar = ({
                           >
                             <path d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9" />
                           </svg>
-                          <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+                          <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                             Notifications
                           </span>
                         </Link>
@@ -1376,7 +1376,7 @@ const Navbar = ({
                           >
                             <path d="M5 18c4.667 4.667 12 1.833 12-4.042h-3l5-6 5 6h-3c-1.125 7.98-11.594 11.104-16 4.042zm14-11.984c-4.667-4.667-12-1.834-12 4.041h3l-5 6-5-6h3c1.125-7.979 11.594-11.104 16-4.041z" />
                           </svg>
-                          <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+                          <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                             Transactions
                           </span>
                         </Link> */}
@@ -1394,7 +1394,7 @@ const Navbar = ({
                             <path fill="none" d="M0 0h24v24H0z" />
                             <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
                           </svg>
-                          <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+                          <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                             Sign out
                           </span>
                         </a>
@@ -1452,9 +1452,9 @@ const Navbar = ({
         </div>
         {/* profile dropdown  */}
         {mobieProfileDrop && (
-          <div className="!-right-4 !top-[85%] !left-auto z-10 min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full group-dropdown-hover:opacity-100 dark:bg-jacarta-800 lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:shadow-2xl py-6">
+          <div className="!-right-4 !top-[85%] !left-auto z-10 min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full group-dropdown-hover:opacity-100 dark:bg-black lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:shadow-2xl py-6">
             <button
-              className="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-display leading-none text-jacarta-700 dark:text-white"
+              className="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-vt323 leading-none text-jacarta-700 dark:text-white"
               data-tippy-content="Copy"
             >
               <span className="max-w-[10rem] overflow-hidden text-ellipsis">
@@ -1497,7 +1497,7 @@ const Navbar = ({
                 <path fill="none" d="M0 0h24v24H0z"></path>
                 <path d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"></path>
               </svg>
-              <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+              <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                 My Profile
               </span>
             </Link>
@@ -1515,7 +1515,7 @@ const Navbar = ({
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path d="M9.954 2.21a9.99 9.99 0 0 1 4.091-.002A3.993 3.993 0 0 0 16 5.07a3.993 3.993 0 0 0 3.457.261A9.99 9.99 0 0 1 21.5 8.876 3.993 3.993 0 0 0 20 12c0 1.264.586 2.391 1.502 3.124a10.043 10.043 0 0 1-2.046 3.543 3.993 3.993 0 0 0-3.456.261 3.993 3.993 0 0 0-1.954 2.86 9.99 9.99 0 0 1-4.091.004A3.993 3.993 0 0 0 8 18.927a3.993 3.993 0 0 0-3.457-.26A9.99 9.99 0 0 1 2.5 15.121 3.993 3.993 0 0 0 4 11.999a3.993 3.993 0 0 0-1.502-3.124 10.043 10.043 0 0 1 2.046-3.543A3.993 3.993 0 0 0 8 5.071a3.993 3.993 0 0 0 1.954-2.86zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
               </svg>
-              <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+              <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                 Edit Profile
               </span>
             </Link>
@@ -1531,7 +1531,7 @@ const Navbar = ({
               >
                 <path d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9" />
               </svg>
-              <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+              <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                 Notifications
               </span>
             </Link>
@@ -1547,7 +1547,7 @@ const Navbar = ({
               >
                 <path d="M5 18c4.667 4.667 12 1.833 12-4.042h-3l5-6 5 6h-3c-1.125 7.98-11.594 11.104-16 4.042zm14-11.984c-4.667-4.667-12-1.834-12 4.041h3l-5 6-5-6h3c1.125-7.979 11.594-11.104 16-4.041z" />
               </svg>
-              <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+              <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                 Transactions
               </span>
             </Link> */}
@@ -1565,7 +1565,7 @@ const Navbar = ({
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
               </svg>
-              <span className="mt-1 font-display text-sm text-jacarta-700 dark:text-white">
+              <span className="mt-1 font-vt323 text-sm text-jacarta-700 dark:text-white">
                 Sign out
               </span>
             </a>

@@ -49,7 +49,7 @@ const Notifications = ({
         <div className="container">
           <h1
             onClick={() => get_user_info()}
-            className="mt-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-white mb-16"
+            className="mt-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white mb-16"
           >
             Transactions
           </h1>
@@ -83,7 +83,7 @@ const Notifications = ({
                       <path fill="none" d="M0 0h24v24H0z" />
                       <path d="M6.17 18a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2v-2h4.17zm6-7a3.001 3.001 0 0 1 5.66 0H22v2h-4.17a3.001 3.001 0 0 1-5.66 0H2v-2h10.17zm-6-7a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2V4h4.17z" />
                     </svg>
-                    <span className="font-display text-base font-medium">
+                    <span className="font-vt323 text-base font-medium">
                       Cross-chain Transactions
                     </span>
                   </button>
@@ -116,7 +116,7 @@ const Notifications = ({
                       <path fill="none" d="M0 0h24v24H0z" />
                       <path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM7 6h4v4H7V6zm0 6h10v2H7v-2zm0 4h10v2H7v-2zm6-9h4v2h-4V7z" />
                     </svg>
-                    <span className="font-display text-base font-medium">
+                    <span className="font-vt323 text-base font-medium">
                       NFT Bidding History
                     </span>
                   </button>
@@ -146,7 +146,7 @@ const Notifications = ({
                                 <Link
                                   href={`/nft/${notificationData.asset_collection}/${notificationData.asset_tokenId}`}
                                 >
-                                  <h3 className="mb-1 font-display text-base font-semibold text-jacarta-700 dark:text-white">
+                                  <h3 className="mb-1 font-vt323 text-base font-semibold text-jacarta-700 dark:text-white">
                                     You Bridged NFT with token ID -{" "}
                                     {notificationData.asset_tokenId} from
                                     collection with address -{" "}
@@ -203,7 +203,7 @@ const Notifications = ({
                           ))}
                         </div>
                         {user_data?.transactions?.length <= 0 && (
-                          <h3 className="mb-1 text-[26px] font-display text-center text-jacarta-700 dark:text-white">
+                          <h3 className="mb-1 text-[26px] font-vt323 text-center text-jacarta-700 dark:text-white">
                             No Transactions Found
                           </h3>
                         )}
@@ -214,7 +214,7 @@ const Notifications = ({
                   <div>
                     <div className="rounded-t-2lg rounded-b-2lg rounded-tl-none border border-jacarta-100 bg-white p-6 dark:border-jacarta-600 dark:bg-jacarta-700 md:p-10">
                       <div className="mb-10 shrink-0 basis-8/12 space-y-5 lg:mb-0 lg:pr-10">
-                        <h3 className="mb-1 font-display text-[26px] text-center text-jacarta-700 dark:text-white">
+                        <h3 className="mb-1 font-vt323 text-[26px] text-center text-jacarta-700 dark:text-white">
                           No History Found
                         </h3>
                       </div>

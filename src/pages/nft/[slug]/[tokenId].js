@@ -159,7 +159,7 @@ const NFTPage = ({
                 </div>
 
                 {/* nft title  */}
-                <h1 className="mb-4 font-display text-4xl font-semibold text-jacarta-700 dark:text-white">
+                <h1 className="mb-4 font-vt323 text-4xl font-semibold text-jacarta-700 dark:text-white">
                   {nft?.ipfsData?.name}
                 </h1>
 
@@ -288,14 +288,14 @@ const NFTPage = ({
 
                         <div className="modal-body p-6">
                           <div className="mb-2 flex items-center justify-between">
-                            <span className="font-display text-sm font-semibold text-jacarta-700 dark:text-white">
+                            <span className="font-vt323 text-sm font-semibold text-jacarta-700 dark:text-white">
                               Price
                             </span>
                           </div>
 
                           <div className="relative mb-2 flex items-center overflow-hidden rounded-lg border border-jacarta-100 dark:border-jacarta-600">
                             <div className="flex flex-1 items-center self-stretch border-r border-jacarta-100 bg-jacarta-50 px-2">
-                              <span className="font-display text-sm text-jacarta-700">
+                              <span className="font-vt323 text-sm text-jacarta-700">
                                 {nft?.chain_symbol
                                   ? nft?.chain_symbol
                                   : "MATIC"}
@@ -515,7 +515,7 @@ const NFTPage = ({
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path d="M6.17 18a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2v-2h4.17zm6-7a3.001 3.001 0 0 1 5.66 0H22v2h-4.17a3.001 3.001 0 0 1-5.66 0H2v-2h10.17zm-6-7a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2V4h4.17z" />
                       </svg>
-                      <span className="font-display text-base font-medium">
+                      <span className="font-vt323 text-base font-medium">
                         Properties
                       </span>
                     </button>
@@ -548,7 +548,7 @@ const NFTPage = ({
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM7 6h4v4H7V6zm0 6h10v2H7v-2zm0 4h10v2H7v-2zm6-9h4v2h-4V7z" />
                       </svg>
-                      <span className="font-display text-base font-medium">
+                      <span className="font-vt323 text-base font-medium">
                         Details
                       </span>
                     </button>
@@ -565,7 +565,7 @@ const NFTPage = ({
                             return (
                               <a
                                 key={index}
-                                className="flex flex-col space-y-2 rounded-2lg border border-jacarta-100 bg-light-base p-5 text-center transition-shadow hover:shadow-lg dark:border-jacarta-600 dark:bg-jacarta-800"
+                                className="flex flex-col space-y-2 rounded-2lg border border-jacarta-100 bg-light-base p-5 text-center transition-shadow hover:shadow-lg dark:border-jacarta-600 dark:bg-black"
                               >
                                 <span className="text-sm uppercase text-accent">
                                   {e.type || e.trait_type}

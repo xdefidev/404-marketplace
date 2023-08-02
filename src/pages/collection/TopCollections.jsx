@@ -22,7 +22,7 @@ const TopCollections = ({ all_collections }) => {
           />
         </picture>
         <div className="container">
-          <h1 className="py-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-white">
+          <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
             Explore Collections
           </h1>
 

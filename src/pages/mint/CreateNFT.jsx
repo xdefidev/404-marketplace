@@ -86,15 +86,15 @@ const CreateNFT = ({
       {loading ? (
         <Loader />
       ) : (
-        <form onSubmit={handleSubmit} className="relative py-24">
+        <form onSubmit={handleSubmit} className="relative py-24 dark:bg-black ">
           <div className="container">
-            <h1 className="py-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-black">
+            <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               Create NFT
             </h1>
             <div className="mx-auto max-w-[48.125rem]">
               {/* <!-- File Upload --> */}
               <div className="mb-6">
-                <label className="mb-2 block font-display text-jacarta-700 dark:text-black">
+                <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                   Select Image Or Video
                   <span className="text-red">*</span>
                 </label>
@@ -150,7 +150,7 @@ const CreateNFT = ({
               <div className="mb-6">
                 <label
                   htmlFor="item-name"
-                  className="mb-2 block font-display text-jacarta-700 dark:text-black"
+                  className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300"
                 >
                   Name<span className="text-red">*</span>
                 </label>
@@ -159,7 +159,7 @@ const CreateNFT = ({
                   name="name"
                   type="text"
                   id="item-name"
-                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300 text-black"
+                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300 text-black"
                   placeholder="Item name"
                   required
                 />
@@ -169,7 +169,7 @@ const CreateNFT = ({
               <div className="mb-6">
                 <label
                   htmlFor="item-description"
-                  className="mb-2 block font-display text-jacarta-700 dark:text-black"
+                  className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300"
                 >
                   Description
                   <span className="text-red">*</span>
@@ -181,7 +181,7 @@ const CreateNFT = ({
                   onChange={handleChange}
                   name="description"
                   id="item-description"
-                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300"
+                  className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300"
                   rows="4"
                   required
                   placeholder="Provide a detailed description of your item."
@@ -191,7 +191,7 @@ const CreateNFT = ({
               {/* select collection  */}
               <div className="relative">
                 <div>
-                  <label className="mb-2 block font-display text-jacarta-700 dark:text-black">
+                  <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                     Collection
                   </label>
                   <div className="mb-3 flex items-center space-x-2">
@@ -245,7 +245,7 @@ const CreateNFT = ({
                     </svg>
 
                     <div>
-                      <label className="block font-display text-jacarta-700 dark:text-black">
+                      <label className="block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                         Properties
                       </label>
                       <p className="dark:text-jacarta-300">
@@ -322,7 +322,7 @@ const CreateNFT = ({
                                 value={data.properties[index].type}
                                 name="type"
                                 type="text"
-                                className="h-12 w-full border border-r-0 border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder-jacarta-300"
+                                className="h-12 w-full border border-r-0 border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder-jacarta-300"
                                 placeholder="Type"
                               />
                             </div>
@@ -333,7 +333,7 @@ const CreateNFT = ({
                                 value={data.properties[index].value}
                                 name="value"
                                 type="text"
-                                className="h-12 w-full rounded-r-lg border border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder-jacarta-300"
+                                className="h-12 w-full rounded-r-lg border border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder-jacarta-300"
                                 placeholder="Value"
                               />
                             </div>

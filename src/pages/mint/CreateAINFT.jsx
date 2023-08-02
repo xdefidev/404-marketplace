@@ -189,7 +189,7 @@ const CreateAINFT = ({
           {!showMintForm && (
             <form onSubmit={handleAISubmit} className="relative py-24">
               <div className="container">
-                <h1 className="pt-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-black">
+                <h1 className="pt-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-jacarta-300">
                   Create AI NFT
                 </h1>
                 <p className="mb-14 mt-4 text-center text-2xs dark:text-jacarta-300">
@@ -251,7 +251,7 @@ const CreateAINFT = ({
                         defaultValue={randomPrompt}
                         name="prompt"
                         id="prompt"
-                        className="w-[28.125rem] rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300"
+                        className="w-[28.125rem] rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300"
                         rows="4"
                         required
                         placeholder="Provide a detailed description of a NFT Image you want to generate, the more you detail the more high quaility image you get"
@@ -260,7 +260,7 @@ const CreateAINFT = ({
                       <textarea
                         name="prompt"
                         id="prompt"
-                        className="w-[28.125rem] rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300"
+                        className="w-[28.125rem] rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300"
                         rows="4"
                         required
                         placeholder="Provide a detailed description of a NFT Image you want to generate, the more you detail the more high quaility image you get"
@@ -339,7 +339,7 @@ const CreateAINFT = ({
           {showMintForm && (
             <form onSubmit={handleSubmit} className="relative py-24">
               <div className="container">
-                <h1 className="py-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-black">
+                <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-jacarta-300">
                   Create AI NFT
                 </h1>
                 <div className="mx-auto max-w-[48.125rem]">
@@ -373,7 +373,7 @@ const CreateAINFT = ({
 
                   <label
                     htmlFor="item-name"
-                    className="mb-2 block font-display text-jacarta-700 dark:text-black mt-6"
+                    className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300 mt-6"
                   >
                     <span className="text-red">* </span> Please Fill The Below
                     Form To Mint The NFT<span className="text-red"> *</span>
@@ -383,7 +383,7 @@ const CreateAINFT = ({
                   <div className="mb-6 mt-6">
                     <label
                       htmlFor="item-name"
-                      className="mb-2 block font-display text-jacarta-700 dark:text-black"
+                      className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300"
                     >
                       Name<span className="text-red">*</span>
                     </label>
@@ -392,7 +392,7 @@ const CreateAINFT = ({
                       name="name"
                       type="text"
                       id="item-name"
-                      className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300 text-black"
+                      className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300 text-black"
                       placeholder="Item name"
                       required
                     />
@@ -402,7 +402,7 @@ const CreateAINFT = ({
                   <div className="mb-6">
                     <label
                       htmlFor="item-description"
-                      className="mb-2 block font-display text-jacarta-700 dark:text-black"
+                      className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300"
                     >
                       Description
                       <span className="text-red">*</span>
@@ -414,7 +414,7 @@ const CreateAINFT = ({
                       onChange={handleChange}
                       name="description"
                       id="item-description"
-                      className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder:text-jacarta-300"
+                      className="w-full rounded-lg border-jacarta-100 py-3 hover:ring-2 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder:text-jacarta-300"
                       rows="4"
                       required
                       placeholder="Provide a detailed description of your item."
@@ -424,7 +424,7 @@ const CreateAINFT = ({
                   {/* select collection  */}
                   <div className="relative">
                     <div>
-                      <label className="mb-2 block font-display text-jacarta-700 dark:text-black">
+                      <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                         Collection
                       </label>
                       <div className="mb-3 flex items-center space-x-2">
@@ -476,7 +476,7 @@ const CreateAINFT = ({
                         </svg>
 
                         <div>
-                          <label className="block font-display text-jacarta-700 dark:text-black">
+                          <label className="block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                             Properties
                           </label>
                           <p className="dark:text-jacarta-300">
@@ -551,7 +551,7 @@ const CreateAINFT = ({
                                     }
                                     name="type"
                                     type="text"
-                                    className="h-12 w-full border border-r-0 border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder-jacarta-300"
+                                    className="h-12 w-full border border-r-0 border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder-jacarta-300"
                                     placeholder="Type"
                                   />
                                 </div>
@@ -563,7 +563,7 @@ const CreateAINFT = ({
                                     }
                                     name="value"
                                     type="text"
-                                    className="h-12 w-full rounded-r-lg border border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-black dark:placeholder-jacarta-300"
+                                    className="h-12 w-full rounded-r-lg border border-jacarta-100 focus:ring-inset focus:ring-accent dark:border-jacarta-600 dark:bg-jacarta-700 dark:text-jacarta-300 dark:placeholder-jacarta-300"
                                     placeholder="Value"
                                   />
                                 </div>

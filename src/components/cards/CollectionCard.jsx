@@ -53,7 +53,7 @@ const CollectionCard = ({
       <div className="flex">
         <Link
           href={`/collection/${CollectionAddress}`}
-          className=" mt-8 font-display text-[22px] text-jacarta-700 hover:text-accent dark:text-white dark:hover:text-accent"
+          className=" mt-8 font-vt323 text-[22px] text-jacarta-700 hover:text-accent dark:text-white dark:hover:text-accent"
           style={{
             width: "180px",
             whiteSpace: "nowrap",

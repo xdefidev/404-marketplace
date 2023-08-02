@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import rarxlogo from "../../public/shiblite.png";
+import rarxlogo from "../../public/404-logo.jpeg";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full page-footer bg-[#f5f6f0] dark:bg-jacarta-900 bottom-0 left-0 block">
+    <div className="w-full page-footer bg-white dark:bg-black bottom-0 left-0 block">
       <div className="container">
         <div className="grid grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12">
           <div className="col-span-full sm:col-span-3 md:col-span-4">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-full sm:col-span-3 md:col-span-2 md:col-start-7">
-            <h3 className="mb-6 font-display text-sm text-jacarta-700 dark:text-white">
+            <h3 className="mb-6 font-vt323 text-sm text-jacarta-700 dark:text-white">
               Marketplace
             </h3>
             <ul className="flex flex-col space-y-1 dark:text-jacarta-300">
@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-full sm:col-span-3 md:col-span-2">
-            <h3 className="mb-6 font-display text-sm text-jacarta-700 dark:text-white">
+            <h3 className="mb-6 font-vt323 text-sm text-jacarta-700 dark:text-white">
               My Account
             </h3>
             <ul className="flex flex-col space-y-1 dark:text-jacarta-300">

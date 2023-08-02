@@ -21,7 +21,14 @@ import { ethPersonalSign } from "@polybase/eth";
 import { create } from "@connext/sdk";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
+import { VT323 } from "@next/font/google"
 import "react-toastify/dist/ReactToastify.css";
+
+const vt323 = VT323({ 
+  subsets: ['latin'],
+  weight:["400"],
+  variable: '--font-vt323',
+});
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -1659,6 +1666,11 @@ export default function App({ Component, pageProps }) {
     fetch_all_nfts_from_polybase();
   }, [router.pathname]);
 
+  useEffect(()=>{
+    const html = document.querySelector("html");
+    html.classList.add("dark")
+  }, [])
+
   useEffect(() => {
     if (!defaultCollectionAddress) {
       return;
@@ -1678,7 +1690,7 @@ export default function App({ Component, pageProps }) {
   }, [defaultCollectionAddress]);
 
   return (
-    <>
+    <main className={`${vt323.variable}`}>
       <Navbar
         search_nft={search_nft}
         connectToWallet={connectToWallet}
@@ -1743,6 +1755,6 @@ export default function App({ Component, pageProps }) {
       />
       <ToastContainer />
       <Footer />
-    </>
+    </main>
   );
 }

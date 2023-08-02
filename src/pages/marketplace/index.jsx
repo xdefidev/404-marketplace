@@ -46,9 +46,9 @@ const Marketplace = ({
       {loading ? (
         <Loader />
       ) : (
-        <section className="relative py-24" id="pageBack">
+        <section className="relative py-24 dark:bg-black" id="pageBack">
           <div className="container">
-            <h1 className="py-16 text-center font-display text-4xl font-medium text-jacarta-700 dark:text-white">
+            <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               Explore NFTs
             </h1>
 
@@ -59,7 +59,7 @@ const Marketplace = ({
                   <a
                     href="#"
                     className={`${propShow &&
-                      "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-display text-sm font-semibold text-jacarta-500 transition-colors `}
+                      "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-vt323 text-sm font-semibold text-jacarta-500 transition-colors `}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const Marketplace = ({
                   <a
                     href="#"
                     className={`${!propShow &&
-                      "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-display text-sm font-semibold text-jacarta-500 transition-colors `}
+                      "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-vt323 text-sm font-semibold text-jacarta-500 transition-colors `}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

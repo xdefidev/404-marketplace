@@ -14,7 +14,7 @@ const BridgeTokens = () => {
 
       <form className="relative py-24">
         <div className="container">
-          <h1 className="pt-16 text-center font-display text-4xl font-medium text-jacarta-700 ">
+          <h1 className="pt-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 ">
             Bridge Your Tokens
           </h1>
           <p className="mb-3 mt-2 text-center text-sm font-medium text-jacarta-700">

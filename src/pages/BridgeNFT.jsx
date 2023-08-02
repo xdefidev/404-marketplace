@@ -190,7 +190,7 @@ const BridgeNFT = ({
           {showSelectNFT == false && (
             <form className="relative py-24">
               <div className="container">
-                <h1 className="pt-16 text-center font-display text-4xl font-medium text-jacarta-700 ">
+                <h1 className="pt-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 ">
                   Bridge Your NFTs
                 </h1>
                 <p className="mb-16 mt-2 text-center text-sm font-medium text-jacarta-700">
@@ -201,7 +201,7 @@ const BridgeNFT = ({
                   {/* select collection  */}
                   <div className="relative">
                     <div>
-                      <label className="mb-1 block font-display text-jacarta-700 dark:text-black">
+                      <label className="mb-1 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                         From
                       </label>
                       <div className="mb-2 flex items-center space-x-2">
@@ -237,7 +237,7 @@ const BridgeNFT = ({
                     </button>
 
                     <div>
-                      <label className="mb-2 block font-display text-jacarta-700 dark:text-black">
+                      <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                         Destination
                       </label>
                       <div className="mb-3 flex items-center space-x-2">
@@ -278,7 +278,7 @@ const BridgeNFT = ({
           {showSelectNFT == true && (
             <form className="relative py-24">
               <div className="container">
-                <h1 className="pt-16 text-center font-display text-4xl font-medium text-jacarta-700 ">
+                <h1 className="pt-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 ">
                   Select NFT For Bridging
                 </h1>
                 <p className="mb-2 mt-2 text-center text-sm font-medium text-jacarta-700">

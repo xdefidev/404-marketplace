@@ -158,7 +158,7 @@ const Stake = ({
   //   const Step = ({ title, amount, fixed }) => {
   //     return (
   //       <Flex
-  //         className="text-nft-black-1 dark:text-black shadow-xl border-nft-gray-1"
+  //         className="text-nft-black-1 dark:text-jacarta-300 shadow-xl border-nft-gray-1"
   //         direction="column"
   //         bg="whiteAlpha.100"
   //         cursor="pointer"
@@ -200,15 +200,15 @@ const Stake = ({
   //           />
   //         </div>
   //         <div className="mt-3 flex flex-col">
-  //           <p className="font-poppins dark:text-black text-nft-black-1 font-semibold text-sm minlg:text-xl">
+  //           <p className="font-poppins dark:text-jacarta-300 text-nft-black-1 font-semibold text-sm minlg:text-xl">
   //             {nft.name}
   //           </p>
   //           <div className="flexBetween mt-1 minlg:mt-3 flex-row xs:flex-col xs:items-start xs:mt-3">
-  //             <p className="font-poppins dark:text-black text-nft-black-1 font-semibold text-xs minlg:text-lg">
+  //             <p className="font-poppins dark:text-jacarta-300 text-nft-black-1 font-semibold text-xs minlg:text-lg">
   //               {nft.price}
   //               <span className="font-normal"> {nftCurrency}</span>
   //             </p>
-  //             <p className="font-poppins dark:text-black text-nft-black-1 font-semibold text-xs minlg:text-lg">
+  //             <p className="font-poppins dark:text-jacarta-300 text-nft-black-1 font-semibold text-xs minlg:text-lg">
   //               {shortenAddress(currentAccount)}
   //             </p>
   //           </div>
@@ -238,13 +238,13 @@ const Stake = ({
               objectFit="cover"
             /> */}
           </div>
-          <p className="font-poppins dark:text-black text-nft-black-1 font-semibold text-2xl mt-6">
+          <p className="font-poppins dark:text-jacarta-300 text-nft-black-1 font-semibold text-2xl mt-6">
             {/* {shortenAddress(currentAccount)} */}
           </p>
         </div>
       </div>
       <div className="w-full text-center items-center justify-center">
-        <h1 className="font-poppins mt-4 dark:text-black text-nft-black-1 text-3xl font-extrabold">
+        <h1 className="font-poppins mt-4 dark:text-jacarta-300 text-nft-black-1 text-3xl font-extrabold">
           Your Tokens Rewards
         </h1>
         <div className="w-full flex mt-4 justify-center items-center sm:flex-col">
@@ -254,7 +254,7 @@ const Stake = ({
               title="Claimable Rewards"
               amount={claimable / 10000000000}
             /> */}
-            <div className="bg-slate-800 text-white w-full h-[150px] p-4 font-display rounded shadow-xl">
+            <div className="bg-slate-800 text-white w-full h-[150px] p-4 font-vt323 rounded shadow-xl">
               <h2 className="h-[60px]">Claimable Rewards</h2>
               <p className="text-slate-400">{reward} SHIBLITE</p>
             </div>

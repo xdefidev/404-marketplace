@@ -202,7 +202,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
           )}
 
           <div className="container relative -translate-y-4">
-            <div className="group absolute right-0 bottom-4 flex items-center rounded-lg bg-white py-2 px-4 font-display text-sm hover:bg-accent">
+            <div className="group absolute right-0 bottom-4 flex items-center rounded-lg bg-white py-2 px-4 font-vt323 text-sm hover:bg-accent">
               <input
                 onChange={(e) => {
                   set_coverImg_preview(URL.createObjectURL(e.target.files[0]));
@@ -230,7 +230,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
         </div>
 
         {/* <!-- Edit Profile --> */}
-        <section className="relative py-16 dark:bg-jacarta-800">
+        <section className="relative py-16 dark:bg-black">
           <div className="container">
             <div className="mx-auto max-w-[48.125rem] md:flex">
               {/* left tab  */}
@@ -238,7 +238,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                 <div className="mb-6">
                   <label
                     htmlFor="profile-username"
-                    className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                    className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                   >
                     Username<span className="text-red">*</span>
                   </label>
@@ -256,7 +256,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                 <div className="mb-6">
                   <label
                     htmlFor="profile-bio"
-                    className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                    className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                   >
                     Bio<span className="text-red">*</span>
                   </label>
@@ -274,7 +274,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                 <div className="mb-6">
                   <label
                     htmlFor="profile-email"
-                    className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                    className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                   >
                     Email address<span className="text-red">*</span>
                   </label>
@@ -295,7 +295,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                 <div className="mb-6">
                   <label
                     htmlFor="profile-email"
-                    className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                    className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                   >
                     Are you a NFT artist ? <span className="text-red">*</span>
                   </label>
@@ -317,7 +317,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                     <div className="mb-6">
                       <label
                         htmlFor="profile-email"
-                        className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                        className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                       >
                         Your Membership Fees in fDAIx{" "}
                         <span className="text-red">*</span>
@@ -336,7 +336,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                     <div className="mb-6">
                       <label
                         htmlFor="profile-bio"
-                        className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                        className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                       >
                         Membership Perks <span className="text-red">*</span>
                       </label>
@@ -355,7 +355,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                 {/* membership end  */}
 
                 <div className="mb-6">
-                  <label className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white">
+                  <label className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white">
                     Wallet Address
                   </label>
                   <button
@@ -444,7 +444,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                     </div>
                   </div>
                   <div className="mt-4">
-                    <span className="mb-3 block font-display text-sm text-jacarta-700 dark:text-white">
+                    <span className="mb-3 block font-vt323 text-sm text-jacarta-700 dark:text-white">
                       Profile Image
                     </span>
                     <p className="text-sm leading-normal dark:text-jacarta-300">
@@ -456,7 +456,7 @@ const EditProfile = ({ signer_address, getUserData, updateData, polybase }) => {
                 <div className="mb-6 mt-14">
                   <label
                     htmlFor="profile-twitter"
-                    className="mb-1 block font-display text-sm text-jacarta-700 dark:text-white"
+                    className="mb-1 block font-vt323 text-sm text-jacarta-700 dark:text-white"
                   >
                     Social Links
                   </label>

@@ -27,7 +27,8 @@ html {
 body {
   line-height: inherit;
   margin: 0;
-  background-color: #f5f6f0;
+  /* background-color: #fff; */
+  /* color: #fff !important; */
 }
 
 hr {
@@ -3102,8 +3103,8 @@ select {
   font-family: DM Sans, sans-serif;
 }
 
-.font-display {
-  font-family: CalSans-SemiBold, sans-serif;
+.font-vt323 {
+  font-family: 'VT323', monospace;
 }
 
 .text-base {
@@ -3533,7 +3534,7 @@ select {
 }
 
 @font-face {
-  font-display: swap;
+  font-vt323: swap;
   font-family: CalSans-SemiBold;
   font-style: normal;
   font-weight: 600;
@@ -3542,7 +3543,7 @@ select {
 }
 
 @font-face {
-  font-display: swap;
+  font-vt323: swap;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
@@ -3550,7 +3551,7 @@ select {
 }
 
 @font-face {
-  font-display: swap;
+  font-vt323: swap;
   font-family: DM Sans;
   font-style: italic;
   font-weight: 400;
@@ -3558,7 +3559,7 @@ select {
 }
 
 @font-face {
-  font-display: swap;
+  font-vt323: swap;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -3566,7 +3567,7 @@ select {
 }
 
 @font-face {
-  font-display: swap;
+  font-vt323: swap;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
@@ -3574,7 +3575,7 @@ select {
 }
 
 @font-face {
-  font-display: swap;
+  font-vt323: swap;
   font-family: DM Sans;
   font-style: italic;
   font-weight: 700;
@@ -3902,7 +3903,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .modal-title {
   --tw-text-opacity: 1;
   color: rgba(19, 23, 64, var(--tw-text-opacity));
-  font-family: CalSans-SemiBold, sans-serif;
+  font-family: 'VT323', monospace;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: normal;
@@ -4065,7 +4066,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .article-content>h6 {
   --tw-text-opacity: 1;
   color: rgba(19, 23, 64, var(--tw-text-opacity));
-  font-family: CalSans-SemiBold, sans-serif;
+  font-family: 'VT323', monospace;
   margin-bottom: 1rem;
   margin-top: 3rem !important;
 }

@@ -39,10 +39,10 @@ const About = () => {
       </Head>
 
       {/* <!-- title --> */}
-      <section className="relative pt-24">
+      <section className="relative pt-24 dark:bg-black">
         <div className="container">
           <div className="mx-auto max-w-2xl py-16 text-center">
-            <h1 className="mb-8 font-display text-4xl font-medium text-jacarta-700 dark:text-white">
+            <h1 className="mb-8 font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               About 404
             </h1>
             <p className="text-lg leading-normal dark:text-jacarta-300">
@@ -80,9 +80,9 @@ const About = () => {
       </div> */}
 
       {/* <!-- Team --> */}
-      <section className="py-24">
+      <section className="py-24 dark:bg-black">
         <div className="container">
-          <h2 className="mb-12 text-center font-display text-3xl text-jacarta-700 dark:text-white">
+          <h2 className="mb-12 text-center font-vt323 text-3xl text-jacarta-700 dark:text-white">
             Team Behind 404
           </h2>
           <div className="flex flex-wrap justify-center align-middle">
@@ -94,7 +94,7 @@ const About = () => {
                 height={100}
                 width={100}
               />
-              <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+              <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
                 Shravan Andoria
               </h3>
               <span className="text-2xs font-medium tracking-tight text-jacarta-400">
@@ -149,7 +149,7 @@ const About = () => {
                 height={100}
                 width={100}
               />
-              <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+              <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
                 Aniruddha Vikharankar
               </h3>
               <span className="text-2xs font-medium tracking-tight text-jacarta-400">
@@ -200,8 +200,8 @@ const About = () => {
       </section>
 
       {/* <!-- chains --> */}
-      <div className="container">
-        <h2 className="mb-8 mt-8 text-center font-display text-3xl text-jacarta-700 dark:text-white">
+      <div className="container dark:bg-black">
+        <h2 className="mb-8 pt-8 text-center font-vt323 text-3xl text-jacarta-700 dark:text-white">
           Supported Chains
         </h2>
         <div className="grid grid-cols-2 py-8 sm:grid-cols-5 text-center">
@@ -213,7 +213,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Ethereum
             </h3>
           </a>
@@ -225,7 +225,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Binance Smart Chain
             </h3>
           </a>
@@ -234,7 +234,7 @@ const About = () => {
 
       {/* <!-- tech --> */}
       {/* <div className="container">
-        <h2 className="mb-6 mt-16 text-center font-display text-3xl text-jacarta-700 dark:text-white">
+        <h2 className="mb-6 mt-16 text-center font-vt323 text-3xl text-jacarta-700 dark:text-white">
           Integrated Technologies
         </h2>
         <div className="grid grid-cols-2 py-8 sm:grid-cols-5 text-center">
@@ -250,7 +250,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Connext
             </h3>
           </a>
@@ -266,7 +266,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               IntMax
             </h3>
           </a>
@@ -282,7 +282,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Polybase
             </h3>
           </a>
@@ -298,7 +298,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Push Protocol
             </h3>
           </a>
@@ -314,7 +314,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Superfluid
             </h3>
           </a>
@@ -326,7 +326,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               The Graph
             </h3>
           </a>
@@ -342,7 +342,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               UMA
             </h3>
           </a>
@@ -358,7 +358,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Infura IPFS
             </h3>
           </a>
@@ -374,7 +374,7 @@ const About = () => {
               height={100}
               width={100}
             />
-            <h3 className="font-display text-md text-jacarta-700 dark:text-white">
+            <h3 className="font-vt323 text-md text-jacarta-700 dark:text-white">
               Moralis
             </h3>
           </a>
