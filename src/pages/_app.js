@@ -285,15 +285,15 @@ export default function App({ Component, pageProps }) {
             .record("0x8ab7C842935F9C652Da3370E1ce9d592569a3fb9")?.collection
             .id,
           "404 Collection",
-          "https://img.tofunft.com/v2/56/0x870696c21ea3f46bb9acf84f71973246e4efa239/25/720/static.jpg",
-          "https://cdn.tofunft.com/covers/6baoxm8yc1b084e.png/1440.png",
+          "/404-logo.jpeg",
+          "/cover.png",
           "Lite Guys",
-          "If you missed #ShibaInu you don't want to miss ShibaLite 💎 A community driven #Crypto which rewards holders & donates",
+          "404 is a unique NFT project consisting of NFTs with 404 characters. The project offers a marketplace for these NFTs. To create a simple NFT, users need to mint it by using 404,404 404 tokens. The minting process is AI-based, where users can input their desired text and the AI generates a unique NFT based on that input. There are three types of NFTs available: simple, advanced, and Deluxe. To obtain an advanced NFT, holders need to burn 404 simple NFTs. Similarly, to obtain a Deluxe NFT, holders need to burn 404 pieces of advanced NFTs. Each 404 NFT contains several attributes and health points, and its level can be upgraded using 404 tokens. Additionally, 404 NFTs have limited power, which can generate passive income for the holders by doing nothing.",
           db
             .collection("User")
             .record("0x8ab7C842935F9C652Da3370E1ce9d592569a3fb9"),
           "0x8ab7C842935F9C652Da3370E1ce9d592569a3fb9",
-          "chains/bsc.png",
+          "chains/eth.png",
           true,
         ]);
     }
@@ -1690,7 +1690,7 @@ export default function App({ Component, pageProps }) {
   }, [defaultCollectionAddress]);
 
   return (
-    <main className={`${vt323.variable}`}>
+    <main className={`${vt323.variable} dark:bg-black` }>
       <Navbar
         search_nft={search_nft}
         connectToWallet={connectToWallet}

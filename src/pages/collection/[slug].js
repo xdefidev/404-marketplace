@@ -173,7 +173,7 @@ const Collection = ({
       ) : (
         <>
           {/* <!-- Banner IMG--> */}
-          <div className="relative mt-24">
+          <div className="relative mt-24 ">
             <Image
               src={collection.coverImage?.replace(
                 /^(ipfs:\/\/|https:\/\/ipfs\.moralis\.io:2053\/ipfs\/)/,
@@ -687,7 +687,7 @@ const Collection = ({
                   role="tabpanel"
                   aria-labelledby="on-sale-tab"
                 >
-                  <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4">
+                  <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4 dark:bg-black">
                     {nfts?.map((e, index) => {
                       return (
                         <NftCard
@@ -713,9 +713,9 @@ const Collection = ({
                       );
                     })}
                   </div>
-                  <div className="flex justify-center">
+                  <div className="flex justify-center dark:bg-black">
                     {nfts?.length <= 0 && (
-                      <h2 className="text-xl font-vt323 font-thin">
+                      <h2 className="text-xl font-vt323 font-thin dark:text-white">
                         This collection has no NFTs !!
                       </h2>
                     )}
