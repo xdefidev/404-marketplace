@@ -37,8 +37,8 @@ export default function Home({ all_collections, nfts, artists }) {
       {/* <!-- Hero secondary --> */}
 
       <section className="relative py-20 md:pt-32 dark:bg-black" id="heroBack">
-        <Slider nfts={nfts} />
-        <Slider1 nfts={nfts} />
+        {/* <Slider nfts={nfts} />
+        <Slider1 nfts={nfts} /> */}
         <div className="h-full px-6 xl:px-20">
           <div className="grid h-full items-center gap-4 lg:grid-cols-12">
             <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-5 xl:pl-[20%] xl:pr-[10%]">
@@ -158,7 +158,7 @@ export default function Home({ all_collections, nfts, artists }) {
                             className="shrink-0"
                           >
                             <img
-                              src="/404-logo.jpeg"
+                              src="/404-logo.png"
                               alt="avatar"
                               className="mr-4 h-10 w-10 rounded-full"
                               height={100}
@@ -205,7 +205,7 @@ export default function Home({ all_collections, nfts, artists }) {
                             className="shrink-0"
                           >
                             <img
-                              src="/404-logo.jpeg"
+                              src="/404-logo.png"
                               alt="avatar"
                               className="mr-4 h-10 w-10 rounded-full"
                               height={100}
@@ -251,7 +251,7 @@ export default function Home({ all_collections, nfts, artists }) {
                               className="shrink-0"
                             >
                               <img
-                                src="/404-logo.jpeg"
+                                src="/404-logo.png"
                                 alt="avatar"
                                 className="mr-4 h-10 w-10 rounded-full"
                                 height={100}
@@ -350,14 +350,14 @@ export default function Home({ all_collections, nfts, artists }) {
             })}
           </div>
 
-          <div className="mt-10 text-center">
+          {/* <div className="mt-10 text-center">
             <Link
               href="/collection/TopCollections"
               className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
             >
               Explore all collections
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -216,7 +216,7 @@ export default function App({ Component, pageProps }) {
         setBlockURL("https://mumbai.polygonscan.com/");
       } else if (chainId == 1) {
         // matic
-        setCollectionAddress("");
+        setCollectionAddress("0xbEb37A34CAa2cC6b0641EaeC8D08326fc3Ad5F40");
         setMarketplaceAddress("");
         setCollectionFactoryAddress("");
         setStakingContract("");

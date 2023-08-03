@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import rarxlogo from "../../public/404-logo.jpeg";
+import rarxlogo from "../../public/404-logo.png";
 import Link from "next/link";
 
 const Footer = () => {
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-full sm:col-span-3 md:col-span-2 md:col-start-7">
-            <h3 className="mb-6 font-vt323 text-sm text-jacarta-700 dark:text-white">
+            <h3 className="mb-6 font-vt323 text-xl text-jacarta-700 dark:text-white">
               Marketplace
             </h3>
             <ul className="flex flex-col space-y-1 dark:text-jacarta-300">
@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-full sm:col-span-3 md:col-span-2">
-            <h3 className="mb-6 font-vt323 text-sm text-jacarta-700 dark:text-white">
+            <h3 className="mb-6 font-vt323 text-xl text-jacarta-700 dark:text-white">
               My Account
             </h3>
             <ul className="flex flex-col space-y-1 dark:text-jacarta-300">

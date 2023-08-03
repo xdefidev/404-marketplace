@@ -16,7 +16,7 @@ const NftCard = ({
   listingPrice,
 }) => {
   return (
-    <div className="relative block rounded-2.5xl border border-jacarta-100 bg-white p-[1.1875rem] transition-shadow hover:shadow-lg dark:border-jacarta-700 dark:bg-jacarta-700">
+    <div className="relative block rounded-2.5xl border border-jacarta-100 bg-white p-[1.1875rem] transition-shadow hover:shadow-lg dark:border-jacarta-700 dark:bg-[#212529]">
       <div className="relative overflow-hidden rounded-[0.625rem] flex w-full">
         {onClickOpen == true ? (
           <Link href={`/nft/${Address}/${tokenId}`}>
@@ -53,27 +53,27 @@ const NftCard = ({
         >
           {onClickOpen == true ? (
             <Link href={`/nft/${Address}/${tokenId}`}>
-              <span className="font-vt323 text-base text-jacarta-700 hover:text-accent dark:text-white">
-                {Name}
+              <span className="font-vt323 text-lg text-jacarta-700 hover:text-accent dark:text-white">
+                {Name}#{tokenId}
               </span>
             </Link>
           ) : (
             <Link href="#">
-              <span className="font-vt323 text-base text-jacarta-700 hover:text-accent dark:text-white">
-                {Name}
+              <span className="font-vt323 text-lg text-jacarta-700 hover:text-accent dark:text-white">
+                {Name}#{tokenId}
               </span>
             </Link>
           )}
         </div>
-        {listedBool && (
+        {/* {listedBool && (
           <span className="flex items-center whitespace-nowrap rounded-md border border-jacarta-100 py-1 px-2 dark:border-jacarta-600">
             <span className=" text-sm font-medium tracking-tight text-green">
               {listingPrice} {chain_symbol}
             </span>
           </span>
-        )}
+        )} */}
       </div>
-      <div
+      {/* <div
         className="mt-1 text-sm text-ellipsis overflow-hidden"
         style={{
           width: "220px",
@@ -83,11 +83,12 @@ const NftCard = ({
         }}
       >
         <span className="font-bold mr-1 text-jacarta-700 dark:text-jacarta-200 ">
-          {/* {Description} */}#{tokenId}
+          {Description}
+          
         </span>
-      </div>
-      <div>
-        <Image
+      </div> */}
+      <div className="py-2 flex justify-between">
+        {/* <Image
           src={`${chainImgPre}${
             chain_image == "" ? "chains/polygon.png" : chain_image
           }`}
@@ -96,7 +97,18 @@ const NftCard = ({
           alt="item 5"
           className="absolute h-6 w-6 right-3 bottom-3"
           loading="lazy"
-        />
+        /> */}
+
+        {listedBool && (
+          <span className="flex items-center whitespace-nowrap rounded-md py-1 px-2 dark:border-jacarta-600">
+            <span className=" text-sm font-medium tracking-tight text-green">
+              {listingPrice} {chain_symbol}
+            </span>
+          </span>
+        )}
+        
+        
+        {listedBool && <button className="rounded bg-white text-black font-vt323  h-7 w-1/3 right-3 bottom-3">BUY NOW</button>}
       </div>
     </div>
   );

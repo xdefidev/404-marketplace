@@ -6,7 +6,7 @@ import { BsChevronDown } from "react-icons/bs";
 import * as PushAPI from "@pushprotocol/restapi";
 
 import Image from "next/image";
-import rarxlogo from "../../public/404-logo.jpeg";
+import rarxlogo from "../../public/404-logo.png";
 import filecoinLogo from "../../public/chains/filecoin.png";
 import gnosisLogo from "../../public/chains/gnosis.png";
 import goerliLogo from "../../public/chains/goerli.png";

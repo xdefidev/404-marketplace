@@ -17,7 +17,7 @@ const CollectionCard = ({
   isCollectionVerified,
 }) => {
   return (
-    <div className="relative rounded-2.5xl border border-jacarta-100 bg-white p-[1.1875rem] transition-shadow hover:shadow-lg dark:border-jacarta-700 dark:bg-jacarta-700 h-[290px] overflow-hidden">
+    <div className="relative rounded-2.5xl border border-jacarta-100 bg-white p-[1.1875rem] transition-shadow hover:shadow-lg dark:border-jacarta-700 dark:bg-[#212529] h-[290px] overflow-hidden">
       <Link
         href={`/collection/${CollectionAddress}`}
         className="relative flex space-x-[0.625rem]"

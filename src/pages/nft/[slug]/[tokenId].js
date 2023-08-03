@@ -9,6 +9,7 @@ import Loader from "@/components/Loader";
 import Link from "next/link";
 import { MdVerified } from "react-icons/md";
 import { BsFillExclamationCircleFill } from "react-icons/bs";
+import truncateEthAddress from 'truncate-eth-address'
 
 const NFTPage = ({
   fetch_NFT_info,
@@ -160,7 +161,7 @@ const NFTPage = ({
 
                 {/* nft title  */}
                 <h1 className="mb-4 font-vt323 text-4xl font-semibold text-jacarta-700 dark:text-white">
-                  {nft?.ipfsData?.name}
+                  {nft?.ipfsData?.name}#{tokenId}
                 </h1>
 
                 {/* nnft desc  */}
@@ -207,7 +208,7 @@ const NFTPage = ({
                     </figure>
                     <div className="flex flex-col justify-center">
                       <span className="block text-sm text-jacarta-400 dark:text-white">
-                        Owned by
+                        Owner
                       </span>
                       <Link
                         href={`/profile/${nft?.user_id}`}
@@ -215,7 +216,7 @@ const NFTPage = ({
                       >
                         <span className="text-sm font-bold">
                           {nft?.seller
-                            ? nft?.seller
+                            ? truncateEthAddress(nft?.seller)
                             : nft?.owner_username
                             ? nft?.owner_username
                             : nft?.user_id}
@@ -295,7 +296,7 @@ const NFTPage = ({
 
                           <div className="relative mb-2 flex items-center overflow-hidden rounded-lg border border-jacarta-100 dark:border-jacarta-600">
                             <div className="flex flex-1 items-center self-stretch border-r border-jacarta-100 bg-jacarta-50 px-2">
-                              <span className="font-vt323 text-sm text-jacarta-700">
+                              <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
                                 {nft?.chain_symbol
                                   ? nft?.chain_symbol
                                   : "MATIC"}
@@ -366,7 +367,7 @@ const NFTPage = ({
 
                 {/* buy now section  */}
                 {nft?.isListed && nft.seller !== signer_address && (
-                  <div className="rounded-2lg border-jacarta-100 bg-white p-8 dark:border-jacarta-600 dark:bg-jacarta-700">
+                  <div className="rounded-2lg border-jacarta-100 bg-white p-8 dark:border-jacarta-600 dark:bg-black">
                     <div className="mb-8 sm:flex sm:flex-wrap">
                       <div className="sm:w-1/2 sm:pr-4 lg:pr-8">
                         <div className="block overflow-hidden text-ellipsis whitespace-nowrap">
@@ -377,10 +378,10 @@ const NFTPage = ({
                         <div className="mt-3 flex">
                           <div>
                             <div className="flex items-center whitespace-nowrap">
-                              <span className="text-lg font-medium leading-tight tracking-tight text-green">
+                              <span className="text-xl font-vt323 leading-tight tracking-tight text-green">
                                 {nft?.listingPrice ? nft?.listingPrice : "0.00"}{" "}
                               </span>
-                              <span className="text-[19px] text-jacarta-700 ml-2">
+                              <span className="text-xl text-jacarta-700 ml-2 font-vt323 dark:text-white">
                                 {nft?.chain_symbol
                                   ? nft?.chain_symbol
                                   : "MATIC"}
@@ -422,7 +423,7 @@ const NFTPage = ({
                             onClick={() =>
                               buyNFT(tokenId, slug, nft?.listingPrice)
                             }
-                            className="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                            className="inline-block w-full rounded-full bg-white py-3 px-8 text-center font-vt323 font-semibold text-black shadow-white-volume transition-all hover:bg-white-dark"
                           >
                             Buy Now
                           </button>
@@ -432,7 +433,7 @@ const NFTPage = ({
                             onClick={() =>
                               alert("Please switch to respective chain")
                             }
-                            className="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                            className="inline-block w-full rounded-full bg-white py-3 px-8 text-center font-vt323 font-semibold text-black shadow-white-volume transition-all hover:bg-white-dark"
                           >
                             Buy Now
                           </button>
@@ -449,7 +450,7 @@ const NFTPage = ({
                       <button
                         type="button"
                         onClick={() => cancelListingToken(slug, tokenId)}
-                        className="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                        className="inline-block w-full rounded-full bg-white py-3 px-8 text-center font-semibold text-black shadow-white-volume transition-all hover:bg-white-dark"
                       >
                         Cancel Sale
                       </button>
@@ -459,7 +460,7 @@ const NFTPage = ({
                         onClick={() =>
                           alert("Please switch to respective chain")
                         }
-                        className="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                        className="inline-block w-full rounded-full bg-white py-3 px-8 text-center font-semibold text-black shadow-white-volume transition-all hover:bg-white-dark"
                       >
                         Cancel Sale
                       </button>
@@ -469,10 +470,10 @@ const NFTPage = ({
 
                 {/* <!-- not listed --> */}
                 {nft?.nft_owner !== signer_address && nft?.isListed == false && (
-                  <div className="rounded-2lg  border-jacarta-100 bg-white p-8 dark:border-jacarta-600 dark:bg-jacarta-700">
+                  <div className="rounded-2lg  border-jacarta-100 bg-white p-8 dark:border-jacarta-600 dark:bg-black">
                     <button
                       type="button"
-                      className="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                      className="inline-block w-full rounded-full bg-white py-3 px-8 text-center font-semibold text-black shadow-white-volume transition-all hover:bg-white-dark"
                     >
                       Not Listed
                     </button>
@@ -515,8 +516,8 @@ const NFTPage = ({
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path d="M6.17 18a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2v-2h4.17zm6-7a3.001 3.001 0 0 1 5.66 0H22v2h-4.17a3.001 3.001 0 0 1-5.66 0H2v-2h10.17zm-6-7a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2V4h4.17z" />
                       </svg>
-                      <span className="font-vt323 text-base font-medium">
-                        Properties
+                      <span className="font-vt323 text-lg font-medium">
+                        Attributes
                       </span>
                     </button>
                   </li>
@@ -548,7 +549,7 @@ const NFTPage = ({
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM7 6h4v4H7V6zm0 6h10v2H7v-2zm0 4h10v2H7v-2zm6-9h4v2h-4V7z" />
                       </svg>
-                      <span className="font-vt323 text-base font-medium">
+                      <span className="font-vt323 text-lg font-medium">
                         Details
                       </span>
                     </button>
