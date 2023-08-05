@@ -3104,7 +3104,8 @@ select {
 }
 
 .font-vt323 {
-  font-family: 'VT323', monospace;
+  font-family: 'PF Tempesta Five', sans-serif;
+
 }
 
 .text-base {
@@ -3903,7 +3904,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .modal-title {
   --tw-text-opacity: 1;
   color: rgba(19, 23, 64, var(--tw-text-opacity));
-  font-family: 'VT323', monospace;
+  font-family: 'PF Tempesta Five', sans-serif;
+
   font-size: 1.5rem;
   font-weight: 600;
   line-height: normal;
@@ -4066,7 +4068,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .article-content>h6 {
   --tw-text-opacity: 1;
   color: rgba(19, 23, 64, var(--tw-text-opacity));
-  font-family: 'VT323', monospace;
+  font-family: 'PF Tempesta Five', sans-serif;
+
   margin-bottom: 1rem;
   margin-top: 3rem !important;
 }

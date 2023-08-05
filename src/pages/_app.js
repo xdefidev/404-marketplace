@@ -21,13 +21,12 @@ import { ethPersonalSign } from "@polybase/eth";
 import { create } from "@connext/sdk";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
-import { VT323 } from "@next/font/google"
+import localFont from "@next/font/local"
 import "react-toastify/dist/ReactToastify.css";
 
-const vt323 = VT323({ 
-  subsets: ['latin'],
-  weight:["400"],
-  variable: '--font-vt323',
+const vt323 = localFont({ 
+  src: './fonts/PublicPixel-z84yD.ttf',
+  variable: '--font-publicpixel',
 });
 
 export default function App({ Component, pageProps }) {

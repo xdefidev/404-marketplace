@@ -77,13 +77,13 @@ export default function Home({ all_collections, nfts, artists }) {
               <div className="flex space-x-4">
                 <Link
                   href="/mint/CreateNFT"
-                  className="w-45 rounded-full bg-[#000] py-3 px-8 text-center font-semibold text-white shadow-[#000]-volume transition-all hover:bg-accent-dark"
+                  className="w-45 rounded-full font-vt323 bg-[#000] py-3 px-8 text-center font-semibold text-white shadow-[#000]-volume transition-all hover:bg-accent-dark text-sm"
                 >
                   Mint NFT
                 </Link>
                 <Link
                   href="/marketplace"
-                  className="w-45 rounded-full bg-white py-3 px-8 text-center font-semibold text-black shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume"
+                  className="w-45 rounded-full font-vt323 bg-white py-3 px-8 text-center font-semibold text-black shadow-white-volume transition-all hover:bg-accent-dark text-sm hover:text-white hover:shadow-accent-volume"
                 >
                   Explore NFTs
                 </Link>

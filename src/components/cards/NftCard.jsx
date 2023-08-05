@@ -106,9 +106,12 @@ const NftCard = ({
             </span>
           </span>
         )}
-        
-        
-        {listedBool && <button className="rounded bg-white text-black font-vt323  h-7 w-1/3 right-3 bottom-3">BUY NOW</button>}
+
+        {listedBool && (
+          <button className="rounded bg-white text-black text-sm font-vt323  h-7 w-2/5 right-3 bottom-3">
+            BUY NOW
+          </button>
+        )}
       </div>
     </div>
   );

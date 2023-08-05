@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        vt323: ['var(--font-vt323)'],
+        vt323: ['var(--font-publicpixel)'],
       },
     },
   },
