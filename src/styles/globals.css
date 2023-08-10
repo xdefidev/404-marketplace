@@ -1,4 +1,60 @@
-@import url('https://fonts.cdnfonts.com/css/pf-tempesta-five');
+@font-face {
+    font-family: 'PF Tempesta Five';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Five'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Five'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five Extended';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Five Extended'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_extended.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Five Condensed'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_condensed.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five Compressed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Five Compressed'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_compressed.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five Extended';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Five Extended'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_extended_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Five Condensed'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_condensed_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PF Tempesta Five Compressed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Five Compressed'), url('https://fonts.cdnfonts.com/s/7373/pf_tempesta_five_compressed_bold.woff') format('woff');
+}
+
+
 
 @tailwind base;
 @tailwind components;

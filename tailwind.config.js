@@ -8,13 +8,13 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode : "class",
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        vt323: ['var(--font-publicpixel)'],
+        vt323: ["PF Tempesta Five", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
