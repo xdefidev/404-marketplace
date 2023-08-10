@@ -27,7 +27,8 @@ const NftCard = ({
         {onClickOpen == true ? (
           <Link href={`/nft/${Address}/${tokenId}`}>
             <Image
-              src={ImageSrc}
+              // src={ImageSrc}
+              src="/ipfs/2.png"
               height={100}
               width={100}
               alt="item 5"
@@ -38,7 +39,8 @@ const NftCard = ({
         ) : (
           <Link href="#">
             <Image
-              src={ImageSrc}
+              // src={ImageSrc}
+              sfr="/ipfs/2.png"
               height={100}
               width={100}
               alt="item 5"
