@@ -21,12 +21,12 @@ import { ethPersonalSign } from "@polybase/eth";
 import { create } from "@connext/sdk";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
-import localFont from "@next/font/local"
+import localFont from "@next/font/local";
 import "react-toastify/dist/ReactToastify.css";
 
-const vt323 = localFont({ 
-  src: './fonts/PublicPixel-z84yD.ttf',
-  variable: '--font-publicpixel',
+const vt323 = localFont({
+  src: "./fonts/pf_tempesta_five.woff",
+  variable: "--font-publicpixel",
 });
 
 export default function App({ Component, pageProps }) {
@@ -1665,10 +1665,10 @@ export default function App({ Component, pageProps }) {
     fetch_all_nfts_from_polybase();
   }, [router.pathname]);
 
-  useEffect(()=>{
+  useEffect(() => {
     const html = document.querySelector("html");
-    html.classList.add("dark")
-  }, [])
+    html.classList.add("dark");
+  }, []);
 
   useEffect(() => {
     if (!defaultCollectionAddress) {
@@ -1689,7 +1689,7 @@ export default function App({ Component, pageProps }) {
   }, [defaultCollectionAddress]);
 
   return (
-    <main className={`${vt323.variable} dark:bg-black` }>
+    <main className={`${vt323.variable} dark:bg-black`}>
       <Navbar
         search_nft={search_nft}
         connectToWallet={connectToWallet}
