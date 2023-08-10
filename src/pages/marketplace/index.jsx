@@ -132,39 +132,41 @@ const Marketplace = ({
             </div>
 
             <div className="flex h-full mt-5 z-10 transition-all md:mt-0">
-              <div class="hidden md:block md:w-[301px]  overflow-y-auto pb-20">
-                <div class=" pb-[100px] overflow-y-auto overflow-x-hidden ">
-                  <div class="flex items-center py-[31px] pl-5 pr-[26px]">
-                    <div class="text-xl font-heavy-obl mr-auto text-[#e2e2e2]">
+              <div className="hidden md:block md:w-[301px]  overflow-y-auto pb-20">
+                <div className=" pb-[100px] overflow-y-auto overflow-x-hidden ">
+                  <div className="flex items-center py-[31px] pl-5 pr-[26px]">
+                    <div className="text-xl font-heavy-obl mr-auto text-[#e2e2e2]">
                       Filter(0)
                     </div>
                     <span
                       id="clearFilter"
-                      class="text-[#f9b845] text-[13px] cursor-pointer"
+                      className="text-[#f9b845] text-[13px] cursor-pointer"
                     >
                       Clear filter
                     </span>
                   </div>
-                  <div class="text-[#9b9b9b] w-full justify-between flex px-5">
-                    <div class="text-base text-[#666666] capitalize">type</div>
+                  <div className="text-[#9b9b9b] w-full justify-between flex px-5">
+                    <div className="text-base text-[#666666] capitalize">
+                      type
+                    </div>
                   </div>
-                  <div class="px-[35px]">
-                    <div class="grid grid-cols-2 gap-y-[10px] gap-x-5 pt-5 pb-[30px] ">
-                      <button class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
+                  <div className="px-[35px]">
+                    <div className="grid grid-cols-2 gap-y-[10px] gap-x-5 pt-5 pb-[30px] ">
+                      <button className="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
                         Simple
                       </button>
-                      <button class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
+                      <button className="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
                         Advanced
                       </button>
                       <button
                         data-test-filter-rainbow="true"
-                        class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
+                        className="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
                       >
                         Deluxe
                       </button>
                       <button
                         data-test-filter-rainbow="true"
-                        class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
+                        className="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
                       >
                         Ultimate
                       </button>

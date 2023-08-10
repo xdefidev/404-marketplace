@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        vt323: ["PF Tempesta Five", "sans-serif"],
+        vt323: ["PF Tempesta Five"],
       },
     },
   },
