@@ -49,17 +49,24 @@ const Marketplace = ({
       ) : (
         <section className="relative py-24 dark:bg-black" id="pageBack">
           <div className="container">
-            <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
+            {/* <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               Explore NFTs
-            </h1>
+            </h1> */}
 
             {/* <!-- Filters --> */}
-            <div className="mb-8 flex flex-wrap items-center justify-between">
+            <div className="mb-8 flex flex-wrap items-center justify-center">
               <ul className="flex flex-wrap items-center text-center">
-                <li className="my-1 mr-2.5" onClick={() => setPropShow(true)}>
+                <li
+                  className="my-1 mr-2.5"
+                  onClick={() => {
+                    setPropShow(true);
+                    setBananaShow(false);
+                  }}
+                >
                   <a
                     href="#"
                     className={`${propShow &&
+                      !bananaShow &&
                       "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-vt323 text-sm font-semibold text-jacarta-500 transition-colors `}
                   >
                     <svg
@@ -75,10 +82,17 @@ const Marketplace = ({
                     <span>Listed 404s</span>
                   </a>
                 </li>
-                <li className="my-1 mr-2.5" onClick={() => setPropShow(false)}>
+                <li
+                  className="my-1 mr-2.5"
+                  onClick={() => {
+                    setPropShow(false);
+                    setBananaShow(false);
+                  }}
+                >
                   <a
                     href="#"
                     className={`${!propShow &&
+                      !bananaShow &&
                       "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-vt323 text-sm font-semibold text-jacarta-500 transition-colors `}
                   >
                     <svg
@@ -94,10 +108,11 @@ const Marketplace = ({
                     <span>All 404s</span>
                   </a>
                 </li>
-                <li className="my-1 mr-2.5" onClick={() => setPropShow(false)}>
+                <li className="my-1 mr-2.5" onClick={() => setBananaShow(true)}>
                   <a
                     href="#"
-                    className={`${!propShow &&
+                    className={`${bananaShow &&
+                      !propShow &&
                       "border-transparent bg-accent text-white"} group flex h-9 items-center rounded-lg border border-jacarta-100 bg-white px-4 font-vt323 text-sm font-semibold text-jacarta-500 transition-colors `}
                   >
                     <svg
