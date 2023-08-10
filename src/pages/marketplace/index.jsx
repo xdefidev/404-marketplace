@@ -48,7 +48,7 @@ const Marketplace = ({
         <Loader />
       ) : (
         <section className="relative py-24 dark:bg-black" id="pageBack">
-          <div className="container">
+          <div className="">
             {/* <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               Explore NFTs
             </h1> */}
@@ -131,8 +131,48 @@ const Marketplace = ({
               </ul>
             </div>
 
-            <div>
-              <div className="container">
+            <div className="flex h-full mt-5 z-10 transition-all md:mt-0">
+              <div class="hidden md:block md:w-[301px]  overflow-y-auto pb-20">
+                <div class=" pb-[100px] overflow-y-auto overflow-x-hidden ">
+                  <div class="flex items-center py-[31px] pl-5 pr-[26px]">
+                    <div class="text-xl font-heavy-obl mr-auto text-[#e2e2e2]">
+                      Filter(0)
+                    </div>
+                    <span
+                      id="clearFilter"
+                      class="text-[#f9b845] text-[13px] cursor-pointer"
+                    >
+                      Clear filter
+                    </span>
+                  </div>
+                  <div class="text-[#9b9b9b] w-full justify-between flex px-5">
+                    <div class="text-base text-[#666666] capitalize">type</div>
+                  </div>
+                  <div class="px-[35px]">
+                    <div class="grid grid-cols-2 gap-y-[10px] gap-x-5 pt-5 pb-[30px] ">
+                      <button class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
+                        Sneakers
+                      </button>
+                      <button class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
+                        Shoeboxes
+                      </button>
+                      <button
+                        data-test-filter-rainbow="true"
+                        class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
+                      >
+                        Rainbow
+                      </button>
+                      <button
+                        data-test-filter-rainbow="true"
+                        class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
+                      >
+                        Special Skin
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="container ">
                 {propShow ? (
                   <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4">
                     {nfts.map((e) => (
