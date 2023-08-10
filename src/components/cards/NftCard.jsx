@@ -17,7 +17,7 @@ const NftCard = ({
 }) => {
   return (
     <div className="relative block rounded-2.5xl border border-jacarta-100 bg-white px-[1.1875rem] pb-[1.1875rem] transition-shadow hover:shadow-lg dark:border-jacarta-700 dark:bg-[#212529]">
-      <div className="bg-[#E2E2E2] w-full mb-[1.1875rem] relative top-0 flex px-4 justify-center text-center overflow-hidden rounded-b-lg">
+      <div className="bg-[#E2E2E2] mb-[1.1875rem] relative top-0 flex px-4 mx-6 justify-center text-center overflow-hidden rounded-b-lg">
         <i>
           <small className="font-semibold font-vt323">Simple</small>
         </i>
@@ -115,7 +115,7 @@ const NftCard = ({
 
         {listedBool && (
           <button className="rounded bg-white text-black text-sm font-vt323  h-7 w-2/5 right-3 bottom-3">
-            BUY NOW
+            BUY
           </button>
         )}
       </div>
