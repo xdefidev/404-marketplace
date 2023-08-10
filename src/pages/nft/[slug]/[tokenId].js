@@ -9,7 +9,7 @@ import Loader from "@/components/Loader";
 import Link from "next/link";
 import { MdVerified } from "react-icons/md";
 import { BsFillExclamationCircleFill } from "react-icons/bs";
-import truncateEthAddress from 'truncate-eth-address'
+import truncateEthAddress from "truncate-eth-address";
 
 const NFTPage = ({
   fetch_NFT_info,
@@ -160,9 +160,15 @@ const NFTPage = ({
                 </div>
 
                 {/* nft title  */}
-                <h1 className="mb-4 font-vt323 text-4xl font-semibold text-jacarta-700 dark:text-white">
-                  {nft?.ipfsData?.name}#{tokenId}
-                </h1>
+                <div className="flex justify-between">
+                  <h1 className="mb-4 font-vt323 text-4xl font-semibold text-jacarta-700 dark:text-white">
+                    {nft?.ipfsData?.name}#{tokenId}
+                  </h1>
+
+                  <h2 className="dark:text-white font-vt323 text-sm font-semibold mb-4 self-center">
+                    lvl0
+                  </h2>
+                </div>
 
                 {/* nnft desc  */}
                 <p className="mb-10 dark:text-jacarta-300">
@@ -290,7 +296,7 @@ const NFTPage = ({
                         <div className="modal-body p-6">
                           <div className="mb-2 flex items-center justify-between">
                             <span className="font-vt323 text-sm font-semibold text-jacarta-700 dark:text-white">
-                              Price
+                              <i>Current Price</i>
                             </span>
                           </div>
 
@@ -372,7 +378,7 @@ const NFTPage = ({
                       <div className="sm:w-1/2 sm:pr-4 lg:pr-8">
                         <div className="block overflow-hidden text-ellipsis whitespace-nowrap">
                           <span className="text-sm text-jacarta-400 dark:text-jacarta-300">
-                            Price
+                            <i>Current Price</i>
                           </span>
                         </div>
                         <div className="mt-3 flex">
@@ -561,7 +567,7 @@ const NFTPage = ({
                   {propShow ? (
                     <div>
                       <div className="rounded-t-2lg rounded-b-2lg rounded-tl-none border border-jacarta-100 bg-white p-6 dark:border-jacarta-600 dark:bg-jacarta-700 md:p-10">
-                        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
+                        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4 dark:text-white">
                           {nft?.nft_properties?.map((e, index) => {
                             return (
                               <a

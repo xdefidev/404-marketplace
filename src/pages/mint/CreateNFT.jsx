@@ -24,7 +24,11 @@ const CreateNFT = ({
     name: "",
     description: "",
     collection: defaultCollectionAddress,
-    properties: [{ type: "", value: "" }],
+    properties: [
+      { type: "Capacity", value: "0" },
+      { type: "Fortuity", value: "0" },
+      { type: "Tenacity", value: "0" },
+    ],
   });
 
   const handleChange = (e) => {

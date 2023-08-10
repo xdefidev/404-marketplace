@@ -17,6 +17,9 @@ const NftCard = ({
 }) => {
   return (
     <div className="relative block rounded-2.5xl border border-jacarta-100 bg-white p-[1.1875rem] transition-shadow hover:shadow-lg dark:border-jacarta-700 dark:bg-[#212529]">
+      <div className="bg-white mb-2 absolute top-0 flex w-full text-center mx-4 border">
+        xxx
+      </div>
       <div className="relative overflow-hidden rounded-[0.625rem] flex w-full">
         {onClickOpen == true ? (
           <Link href={`/nft/${Address}/${tokenId}`}>
