@@ -135,7 +135,7 @@ const Marketplace = ({
               <div className="hidden md:block md:w-[301px]  overflow-y-auto pb-20">
                 <div className=" pb-[100px] overflow-y-auto overflow-x-hidden ">
                   <div className="flex items-center py-[31px] pl-5 pr-[26px]">
-                    <div className="text-xl font-heavy-obl mr-auto text-[#e2e2e2]">
+                    <div className="text-xl font-vt323 mr-auto text-[#e2e2e2]">
                       Filter(0)
                     </div>
                     <span
