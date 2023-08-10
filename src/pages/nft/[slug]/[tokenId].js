@@ -98,10 +98,11 @@ const NFTPage = ({
             <div className="md:flex md:flex-wrap">
               <div className="relative mb-8 md:w-2/5 md:flex-shrink-0 md:flex-grow-0 md:basis-auto lg:w-1/2">
                 <Image
-                  src={nft?.ipfsData?.image?.replace(
-                    /^(ipfs:\/\/|https:\/\/ipfs\.moralis\.io:2053\/ipfs\/)/,
-                    "https://gateway.ipfscdn.io/ipfs/"
-                  )}
+                  // src={nft?.ipfsData?.image?.replace(
+                  //   /^(ipfs:\/\/|https:\/\/ipfs\.moralis\.io:2053\/ipfs\/)/,
+                  //   "https://gateway.ipfscdn.io/ipfs/"
+                  // )}
+                  src="/ipfs/2.png"
                   width={100}
                   height={100}
                   alt="item"
