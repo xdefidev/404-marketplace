@@ -151,22 +151,22 @@ const Marketplace = ({
                   <div class="px-[35px]">
                     <div class="grid grid-cols-2 gap-y-[10px] gap-x-5 pt-5 pb-[30px] ">
                       <button class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
-                        Sneakers
+                        Simple
                       </button>
                       <button class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]">
-                        Shoeboxes
+                        Advanced
                       </button>
                       <button
                         data-test-filter-rainbow="true"
                         class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
                       >
-                        Rainbow
+                        Deluxe
                       </button>
                       <button
                         data-test-filter-rainbow="true"
                         class="border-dashed text-[#666666] border-[#666666] h-[25px] min-w-[70px] font-book-obl text-[13px] rounded-[12.5px] border-[1px]"
                       >
-                        Special Skin
+                        Ultimate
                       </button>
                     </div>
                   </div>
