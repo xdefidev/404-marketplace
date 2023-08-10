@@ -55,7 +55,7 @@ const Marketplace = ({
 
             {/* <!-- Filters --> */}
             <div className="mb-8 flex flex-wrap items-center justify-center">
-              <ul className="flex flex-wrap items-center text-center">
+              <ul className="flex flex-wrap items-center text-center px-2">
                 <li
                   className="my-1 mr-2.5"
                   onClick={() => {
