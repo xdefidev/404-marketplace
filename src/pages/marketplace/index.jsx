@@ -15,6 +15,7 @@ const Marketplace = ({
   const [notListedNFts, setNotListedNFts] = useState([]);
 
   const [propShow, setPropShow] = useState(true);
+  const [bananaShow, setBananaShow] = useState(false);
 
   const get_nfts = async () => {
     setLoading(true);
