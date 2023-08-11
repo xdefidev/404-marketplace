@@ -295,6 +295,27 @@ export default function App({ Component, pageProps }) {
           "chains/eth.png",
           true,
         ]);
+
+      const res2 = await db
+        .collection("Collection")
+        .create([
+          defaultCollectionAddress,
+          await db
+            .collection("User")
+            .record("0x8ab7C842935F9C652Da3370E1ce9d592569a3fb9")?.collection
+            .id,
+          "Banana Collection",
+          "/404-logo.jpeg",
+          "/cover.png",
+          "Lite Guys",
+          "404 is a unique NFT project consisting of NFTs with 404 characters. The project offers a marketplace for these NFTs. To create a simple NFT, users need to mint it by using 404,404 404 tokens. The minting process is AI-based, where users can input their desired text and the AI generates a unique NFT based on that input. There are three types of NFTs available: simple, advanced, and Deluxe. To obtain an advanced NFT, holders need to burn 404 simple NFTs. Similarly, to obtain a Deluxe NFT, holders need to burn 404 pieces of advanced NFTs. Each 404 NFT contains several attributes and health points, and its level can be upgraded using 404 tokens. Additionally, 404 NFTs have limited power, which can generate passive income for the holders by doing nothing.",
+          db
+            .collection("User")
+            .record("0x8ab7C842935F9C652Da3370E1ce9d592569a3fb9"),
+          "0x8ab7C842935F9C652Da3370E1ce9d592569a3fb9",
+          "chains/eth.png",
+          true,
+        ]);
     }
   };
 
