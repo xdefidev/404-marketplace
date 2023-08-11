@@ -631,6 +631,16 @@ const Navbar = ({
                         </span>
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/mint/CreateNFT"
+                        className="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
+                      >
+                        <span className="font-vt323 text-sm text-jacarta-700 dark:text-white">
+                          Mint Banana
+                        </span>
+                      </Link>
+                    </li>
                     {/* <li>
                       <Link
                         href="/mint/CreateAINFT"
@@ -1155,8 +1165,7 @@ const Navbar = ({
                             );
                           })}
                         {notificationData &&
-                          notificationData[0]?.app !=
-                            "404 Marketplace" && (
+                          notificationData[0]?.app != "404 Marketplace" && (
                             <div className="h-[135px]">
                               <a
                                 href="#"
