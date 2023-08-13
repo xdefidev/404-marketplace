@@ -20,8 +20,15 @@ import mantle from "../../public/chains/mantle.png";
 import polygon from "../../public/chains/polygon.png";
 import scroll from "../../public/chains/scroll.png";
 import taiko from "../../public/chains/taiko.png";
+import DinoGame from "react-chrome-dino-ts";
+import "react-chrome-dino-ts/index.css";
 
-export default function Home({ all_collections, nfts, artists }) {
+export default function Home({
+  all_collections,
+  nfts,
+  artists,
+  signer_address,
+}) {
   return (
     <>
       <Head>
@@ -282,6 +289,13 @@ export default function Home({ all_collections, nfts, artists }) {
           </div>
         </div>
       </section>
+
+      {signer_address && (
+        <div className="container py-12">
+          <DinoGame />
+        </div>
+      )}
+      {/* <ChromeDinoGame /> */}
 
       {/* Newly minted  */}
       <div className="py-24 dark:bg-black">
