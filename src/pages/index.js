@@ -291,7 +291,7 @@ export default function Home({
       </section>
 
       {signer_address && (
-        <div className="container py-12">
+        <div className="container py-12 bg-white">
           <DinoGame />
         </div>
       )}
