@@ -290,11 +290,6 @@ export default function Home({
         </div>
       </section>
 
-      {signer_address && (
-        <div className="container py-12 bg-white">
-          <DinoGame />
-        </div>
-      )}
       {/* <ChromeDinoGame /> */}
 
       {/* Newly minted  */}
