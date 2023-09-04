@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Loader from "@/components/Loader";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import NftCard from "@/components/cards/NftCard";
 
 const CreateNFT = ({
   create_token,
@@ -93,17 +92,12 @@ const CreateNFT = ({
       ) : (
         <form onSubmit={handleSubmit} className="relative py-24 dark:bg-black ">
           <div className="container">
-            <h1 className="pt-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
+            <h1 className="py-16 text-center font-vt323 text-4xl font-medium text-jacarta-700 dark:text-white">
               Create NFT
             </h1>
-            <div className="flex justify-center">
-              <h2 className="dark:text-white font-vt323 pb-16">
-                Select 4 404s to mint
-              </h2>
-            </div>
-            <div className="mx-auto max-w-[48.125rem] flex items-center justify-center">
+            <div className="mx-auto max-w-[48.125rem]">
               {/* <!-- File Upload --> */}
-              {/* <div className="mb-6">
+              <div className="mb-6">
                 <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                   Select Image Or Video
                   <span className="text-red">*</span>
@@ -154,10 +148,10 @@ const CreateNFT = ({
                     />
                   </div>
                 )}
-              </div> */}
+              </div>
 
               {/* <!-- Name --> */}
-              {/* <div className="mb-6">
+              <div className="mb-6">
                 <label
                   htmlFor="item-name"
                   className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300"
@@ -173,10 +167,10 @@ const CreateNFT = ({
                   placeholder="Item name"
                   required
                 />
-              </div> */}
+              </div>
 
               {/* <!-- Description --> */}
-              {/* <div className="mb-6">
+              <div className="mb-6">
                 <label
                   htmlFor="item-description"
                   className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300"
@@ -196,10 +190,10 @@ const CreateNFT = ({
                   required
                   placeholder="Provide a detailed description of your item."
                 ></textarea>
-              </div> */}
+              </div>
 
               {/* select collection  */}
-              {/* <div className="relative">
+              <div className="relative">
                 <div>
                   <label className="mb-2 block font-vt323 text-jacarta-700 dark:text-jacarta-300">
                     Collection
@@ -226,9 +220,9 @@ const CreateNFT = ({
                   required
                 >
                   <option>Select Collection</option>
-                  <option value={defaultCollectionAddress}>
+                  {/* <option value={defaultCollectionAddress}>
                     404 Marketplace Collection
-                  </option>
+                  </option> */}
                   {user_collections?.map((e, index) => {
                     return (
                       <option key={index} value={e.collection_address}>
@@ -237,10 +231,10 @@ const CreateNFT = ({
                     );
                   })}
                 </select>
-              </div> */}
+              </div>
 
               {/* <!-- Properties --> */}
-              {/* <div className="relative border-b border-jacarta-100 py-6 dark:border-jacarta-600 mb-6 mt-8">
+              <div className="relative border-b border-jacarta-100 py-6 dark:border-jacarta-600 mb-6 mt-8">
                 <div className="flex items-center justify-between">
                   <div className="flex">
                     <svg
@@ -296,10 +290,10 @@ const CreateNFT = ({
                     )}
                   </button>
                 </div>
-              </div> */}
+              </div>
 
               {/* <!-- Properties Modal --> */}
-              {/* {propModel && (
+              {propModel && (
                 <div>
                   <div className="max-w-2xl mb-4">
                     <div className="modal-content">
@@ -361,17 +355,9 @@ const CreateNFT = ({
                     </div>
                   </div>
                 </div>
-              )} */}
-
-              <div className="flex justify-between gap-4 grid grid-cols-2">
-                {[1, 2, 3, 4].map((item) => (
-                  <NftCard />
-                ))}
-              </div>
+              )}
 
               {/* <!-- Submit nft form --> */}
-            </div>
-            <div className="flex justify-center my-4">
               <button
                 type="submit"
                 className="rounded-full bg-accent py-3 px-8 text-center font-semibold text-white transition-all cursor-pointer"
